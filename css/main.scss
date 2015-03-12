@@ -1,7 +1,11 @@
+---
+---
+
 $gf-red:  #CA4443;
 $dark-red: #B03B3B;
 $light-red: #FFDAD9;
 $orchard-green: #8AAC85;
+$orchard-purple: #8d1767;
 $dark-green: #769271;
 $light-green: #E4FDCB;
 
@@ -26,7 +30,6 @@ a, .button {
 a:hover, .button:hover {
  color: #222;
 }
-
 
 /* Navbar */
 .navbar {
@@ -133,6 +136,40 @@ a:hover, .button:hover {
     color: $dark-red;
 }
 
+/*
+  main buttons for call to action
+*/
+
+div.main-buttons {
+    display: block;
+    clear: both;
+    text-align: center;
+    a {
+        display: inline-block;
+        border-radius: .5em;
+        padding: .2em .7em;
+        font-size: 1.7em;
+        line-height: 1.7em;
+        background-color: $gf-red;
+        color: #fff;
+    }
+    a:hover {
+        background-color: darken($gf-red, 10%);
+    }
+    a.orchard{
+      background-color: $orchard-purple;
+      font-weight: 600;
+      color: #fff;
+    }
+    a.orchard:hover{
+      background-color: lighten($orchard-purple, 10%);
+      color: #fff;
+    }
+    .light-red {
+        background: $light-red;
+    }
+}
+
 #landing-area {
     padding-top: 12rem;
 
@@ -147,28 +184,6 @@ a:hover, .button:hover {
         text-align: center;
     }
 
-    .buttons {
-        display: block;
-        clear: both;
-        text-align: center;
-        .button {
-            // display: inline-block;
-            /* Rectangle 7: */
-            border: 5px solid $gf-red;
-            border-radius: 21px;
-            font-size: 12px;
-            line-height: 19px;
-            height: 6rem;
-
-        }
-        button:hover {
-            border-color: $dark-red;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-        .light-red {
-            background: $light-red;
-        }
-    }
     #open-source-notice {
         padding: 7rem 0rem;
         .text-small {
@@ -224,11 +239,10 @@ a:hover, .button:hover {
         }
         button:hover {
             border-color: $dark-red;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
     }
 }
-#take-a-tour {
+#features {
     padding: 7rem 0rem;
     .text-header {
         font-size: 6rem;
@@ -293,7 +307,7 @@ a:hover, .button:hover {
     }
     .text-o {
         font-family: MinionPro-Regular;
-        color: $orchard-green;
+        color: $orchard-purple;
         letter-spacing: 2.59px;
         line-height: 86px;
     }
@@ -331,6 +345,14 @@ a:hover, .button:hover {
     .o-green {
         color: $orchard-green;
     }
+    .o-purple{
+      color: $orchard-purple;
+      font-weight: bold;
+    }
+
+    div.main-buttons{
+      margin-top: 1em;
+    }
 
     .orchard-explaination {
         padding-top: 5rem;
@@ -342,33 +364,6 @@ a:hover, .button:hover {
 
         .text-large {
             padding-bottom: 0;
-        }
-    }
-    .buttons {
-        display: block;
-        clear: both;
-        text-align: center;
-        padding-top: 3rem;
-        .button {
-            // display: inline-block;
-            /* Rectangle 7: */
-            border: 5px solid $gf-red;
-            border-radius: 21px;
-            font-size: 12px;
-            line-height: 19px;
-            height: 6rem;
-            margin: 5px;
-        }
-        button:hover {
-            border-color: $dark-red;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-        .orchard {
-            border-color: $orchard-green;
-            background: $light-green;
-        }
-        .orchard:hover {
-            border-color: $dark-green;
         }
     }
 
@@ -549,17 +544,17 @@ a:hover, .button:hover {
         .vertical-divider {
 
             font-weight: 100;
-            color: #666666;
+            color: #ccc;
         }
         .text-o {
             font-family: MinionPro-Regular;
-            color: $orchard-green;
+            color: $orchard-purple;
             letter-spacing: 2.59px;
             line-height: 86px;
         }
         .divider {
             width: 50%;
-            border-bottom: 1px solid $orchard-green;
+            border-bottom: 1px solid $orchard-purple;
             padding: 5rem 0rem 5rem 0rem;
             margin-bottom: 5rem;
         }
@@ -616,5 +611,3 @@ a:hover, .button:hover {
         }
     }
 }
-
-
