@@ -23,10 +23,10 @@ $(document).ready(function() {
     // nav managing function, fired on scroll
     function recalculateNavBar() {
 
-        if(30 < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
+        if(15 < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
             $body.addClass('has-docked-nav')
         }
-        if(30 > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
+        if(15 > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
             $body.removeClass('has-docked-nav')
         }
 

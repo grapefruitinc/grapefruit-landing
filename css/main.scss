@@ -1,25 +1,48 @@
 ---
 ---
 
-/* variables for colors */
+/* variables */
 
 $gf-red:  #CA4443;
 $dark-red: #B03B3B;
 $light-red: #FFDAD9;
-$orchard-green: #8AAC85;
 $orchard-purple: #8d1767;
 $dark-green: #769271;
 $light-green: #E4FDCB;
+$paragraph: #777a7a;
 
+$navbar-height: 7.5rem;
 
-/*** intialization ***/
 
 /* prevent empty columns from colapsing */
 .column, .columns {
     min-height: 1px;
 }
+.container {
+   max-width: 1260px;
+}
 
-/*** common classes ***/
+html, body {
+    height: 100%;
+}
+
+.align-text-center {
+    text-align: center;
+}
+p {
+    color: $paragraph;
+}
+.bold {
+    font-weight: bold;
+}
+.upper {
+    text-transform: uppercase;
+}
+.text-header {
+    font-size: 6rem;
+    font-weight: bold;
+    text-align: center;
+}
 
 .section {
     border-bottom: 12px solid $gf-red;
@@ -36,6 +59,48 @@ a:hover, .button:hover {
  color: #222;
 }
 
+.item-block {
+    margin-top: 3rem;
+    margin-left: 5%;
+    margin-right: 0rem;
+    margin-bottom: 5rem;
+    min-height: 5rem;
+    color: #222;
+    background-repeat: no-repeat;
+    background-size: 5rem;
+    padding-left: 70px;
+    width: 70%;
+
+    h6 {
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 1.3rem;
+        margin-bottom: 0.2rem;
+        padding-bottom: 0;
+    }
+    p {
+
+        font-size: 1.3rem;
+        font-weight: 200;
+    }
+}
+
+.divider {
+    width: 100%;
+    border-bottom: 1px solid $gf-red;
+    padding: 2rem 0rem 2rem 0rem;
+    display: block;
+
+    &.mini {
+        width: 30%;
+        margin: 0 auto;
+        padding: 9rem;
+    }
+    &.purple {
+        border-color: $orchard-purple;
+    }
+}
+
 /*** Navbar ***/
 
 .navbar {
@@ -47,7 +112,7 @@ a:hover, .button:hover {
     position: fixed;
     top:0;left:0;
     width: 100%;
-    height: 7.5rem;
+    height: $navbar-height;
     z-index: 99;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
@@ -142,22 +207,24 @@ a:hover, .button:hover {
     color: $dark-red;
 }
 
-/*
-  main buttons for call to action
-*/
+/* styling for button pairs */
 
-div.main-buttons {
+.button-pair {
     display: block;
     clear: both;
     text-align: center;
+    padding-bottom: 7rem;
     a {
         display: inline-block;
         border-radius: .5em;
-        padding: .2em .7em;
-        font-size: 1.7em;
+        padding: .8em 1.2em;
+        font-size: 1em;
         line-height: 1.7em;
         background-color: $gf-red;
         color: #fff;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin: 0.5rem;
     }
     a:hover {
         background-color: darken($gf-red, 10%);
@@ -171,179 +238,82 @@ div.main-buttons {
       background-color: lighten($orchard-purple, 10%);
       color: #fff;
     }
-    .light-red {
-        background: $light-red;
-    }
+
 }
-
+.full-height {
+    height: 100%;
+}
 #landing-area {
-    padding-top: 12rem;
+    position: relative;
+    padding-top: 34%;
 
-    .image {
+    .large-logo {
         margin: auto;
         display: block;
-        width: 30rem;
+        width: 20rem;
     }
 
-    .text-large {
-        font-size: 3rem;
-        text-align: center;
-    }
-
-    .text-small {
-        font-size: 1.7rem;
-    }
     #open-source-notice {
-        padding: 7rem 0rem;
-        .text-small {
-            text-align: center;
-        }
+        padding: 2rem 0rem 2rem 0rem;
     }
 
 }
 #why-grapefruit {
-    padding: 7rem 0rem;
-    .text-header {
-        font-size: 6rem;
-        font-weight: bold;
-        text-align: center;
-    }
-    .divider {
-        width: 50%;
-        border-bottom: 1px solid $gf-red;
-        padding: 5rem 0rem;
-    }
-    .mini-divider {
-        width: 30%;
-        border-bottom: 1px solid $gf-red;
-        padding: 5rem 0rem;
-    }
+    padding: 14rem 0rem;
+
     .title-block {
-        padding: 7rem 0rem;
-        .image {
+        padding: 12rem 0rem 1rem 0rem;
+        .icon {
             display: block;
             margin: 0 auto;
             width: 8rem;
-        }
-        .text {
-            font-size: 3rem;
-            font-weight: 200;
-            text-align: center;
+            padding-bottom: 2rem;
         }
     }
-    .more-info {
-        padding: 4rem 0rem;
+    .more-info-button {
         display: block;
-        margin: 0 auto;
-        text-align: center;
-        button {
-            text-transform: uppercase;
-            /* Rectangle 7: */
-            border: 3px solid #CA4443;
-            border-radius: 21px;
-            font-size: 1rem;
-            font-weight: bold;
-            height: 4rem;
-            line-height: 19px;
-        }
-        button:hover {
-            border-color: $dark-red;
+        margin: 0rem auto 0rem auto;
+        text-transform: uppercase;
+        border: 3px solid $gf-red;
+        border-radius: 21px;
+        font-size: 1rem;
+        font-weight: bold;
+        height: 4rem;
+        line-height: 19px;
+        &:hover {
+            border-color: darken($gf-red, 10%);
         }
     }
 }
 #features {
-    padding: 7rem 0rem;
-    .text-header {
-        font-size: 6rem;
-        font-weight: bold;
-        text-align: center;
-    }
-    .divider {
-        width: 50%;
-        border-bottom: 1px solid $gf-red;
-        padding: 5rem 0rem 5rem 0rem;
-        margin-bottom: 5rem;
-    }
-    .mini-divider {
-        width: 30%;
-        border-bottom: 1px solid $gf-red;
-        padding: 5rem 0rem;
-    }
-
+    padding: 14rem 0rem;
 
     .example {
         padding: 5rem;
+
         .title {
-            font-size: 2rem;
             font-weight: bold;
             color: #D0021B;
-            line-height: 29px;
+            padding: 0;
+            margin-bottom: 1rem;
         }
         .screenshot {
-
             width: 100%;
             margin-left: -1rem;
-        }
-        .text {
-
         }
     }
 
 }
 #grapefruit-orchard {
     padding: 7rem 0rem;
-    .image-header {
+
+    .orchard-logo {
             display: block;
             margin: 0 auto;
             text-align: center;
-            width: 30rem;
+            width: 20rem;
             margin-top: 7rem;
             margin-bottom: 3rem;
-    }
-    .text-header {
-        font-size: 4rem;
-        font-weight: bold;
-        text-align: center;
-        margin-left: -0.7rem;
-    }
-    .text-gf {
-        color: $gf-red;
-        font-size: 3.5rem;
-    }
-    .vertical-divider {
-
-        font-weight: 100;
-    }
-    .text-o {
-        font-family: MinionPro-Regular;
-        color: $orchard-purple;
-        letter-spacing: 2.59px;
-        line-height: 86px;
-    }
-    .divider {
-        width: 50%;
-        border-bottom: 1px solid $gf-red;
-        padding: 5rem 0rem 5rem 0rem;
-        margin-bottom: 5rem;
-    }
-    .mini-divider {
-        width: 30%;
-        border-bottom: 1px solid $gf-red;
-        padding: 5rem 0rem;
-    }
-    .text-large {
-        font-size: 3rem;
-        font-weight: bold;
-        text-align: center;
-        padding-bottom: 6rem;
-    }
-    .text-small {
-        font-size: 2rem;
-        font-weight: 200;
-        text-align: center;
-    }
-    .spaced {
-        line-height: 4rem;
     }
     .underlined {
         text-decoration: underline;
@@ -351,56 +321,34 @@ div.main-buttons {
     .light {
         color: #C4C9C7;
     }
-    .o-green {
-        color: $orchard-green;
-    }
-    .o-purple{
+    .orchard-purple {
       color: $orchard-purple;
-      font-weight: bold;
-    }
-
-    div.main-buttons{
-      margin-top: 1em;
     }
 
     .orchard-explaination {
         padding-top: 5rem;
         padding-bottom: 5rem;
         line-height: 3rem;
+
+        p {
+            line-height: 2.4rem;
+        }
+    }
+    .orchard-pricing {
+        padding-top: 10rem;
     }
     .orchard-talk {
         padding-top: 10rem;
 
-        .text-large {
-            padding-bottom: 0;
+        h4 {
+            margin: 0;
+        }
+        p {
+            padding: 0;
+            margin: 0;
         }
     }
 
-}
-.item-block {
-    margin-top: 3rem;
-    margin-left: 15%;
-    margin-bottom: 5rem;
-    color: #222;
-    background-repeat: no-repeat;
-    // background-position: 0px -4px;
-    background-size: 5rem;
-    padding-left: 70px;
-    width: 50%;
-
-    .title {
-        text-transform: uppercase;
-        font-weight: 900;
-        font-size: 1rem;
-    }
-    .text {
-        font-size: 1rem;
-        font-weight: 200;
-    }
-}
-.no-offset {
-    background-position: 0px 0px;
-    background-size: 6rem;
 }
 
 .image-content {
@@ -433,34 +381,25 @@ div.main-buttons {
 .image-heart {
     background-image: url("../images/orchard/heart.png");
 }
-.item-title {
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    font-weight: bold;
-    letter-spacing: .2rem;
-}
-
 
 #footer {
-    /* padding: 5rem 20rem 0rem 20rem; */
     padding: 1rem;
     background: $gf-red;
     color: #fff;
     text-decoration: none;
-    font-size: 0.5rem;
+    font-size: 1.3rem;
 
     .copyright {
-        // float: left;
+
+        font-size: 1.2rem;
         text-align: center;
+        padding-bottom: 2rem;
         span {
-            // padding-left: 3rem;
-            // float: left;
             display: block;
             clear: both;
         }
     }
     .links {
-        // float: right;
         text-align: center;
         a {
             padding: 0;
@@ -475,7 +414,25 @@ div.main-buttons {
 
 /* Larger than phone */
 @media (min-width: 550px) {
+    #landing-area {
 
+        padding-top: 8%;
+
+        .large-logo {
+
+            width: 40rem;
+        }
+    }
+    .item-block {
+        margin-left: 15%;
+    }
+    #features {
+        .example {
+            .screenshot {
+                margin-left: -2rem;
+            }
+        }
+    }
 }
 
 /* Larger than tablet */
@@ -488,28 +445,12 @@ div.main-buttons {
         display: none;
     }
 
+
+
     #take-a-tour {
         padding: 7rem 0rem;
-        .text-header {
-            font-size: 6rem;
-            font-weight: bold;
-            text-align: center;
-        }
-        .divider {
-            width: 50%;
-            border-bottom: 1px solid $gf-red;
-            padding: 5rem 0rem 5rem 0rem;
-            margin-bottom: 25rem;
-        }
-        .mini-divider {
-            width: 30%;
-            border-bottom: 1px solid $gf-red;
-            padding: 5rem 0rem;
-        }
-
 
         .example {
-            // padding-top: 5rem;
             padding: 0;
             margin-top: -15rem;
             .title {
@@ -536,14 +477,11 @@ div.main-buttons {
             display: block;
             margin: 0 auto;
             text-align: center;
-            width: 30rem;
+            width: 10rem;
             margin-top: 7rem;
             margin-bottom: 3rem;
         }
         .text-header {
-            font-size: 6rem;
-            font-weight: bold;
-            text-align: center;
             margin-left: -3rem;
         }
         .text-gf {
@@ -561,46 +499,26 @@ div.main-buttons {
             letter-spacing: 2.59px;
             line-height: 86px;
         }
-        .divider {
-            width: 50%;
-            border-bottom: 1px solid $orchard-purple;
-            padding: 5rem 0rem 5rem 0rem;
-            margin-bottom: 5rem;
-        }
-        .mini-divider {
-            width: 30%;
-            border-bottom: 1px solid $gf-red;
-            padding: 5rem 0rem;
-        }
+
     }
     .item-block {
-        // margin-top: 1rem;
-        // margin-bottom: 5rem;
-        color: #222;
+        margin-left: 15%;
         background-repeat: no-repeat;
-        // background-position: -3px -3px;
-        // background-size: 3rem;
-        // padding-left: 40px;
-        // margin-left: 0%;
-
-        .title {
-            text-transform: uppercase;
-        }
-        .text {
-            // font-size: 1.4rem;
-            font-weight: 200;
+    }
+    #features {
+        .screenshot {
+            margin-left: -2rem;
         }
     }
     #footer {
-        /* padding: 5rem 20rem 0rem 20rem; */
         padding: 1rem;
         background: $gf-red;
         color: #fff;
         text-decoration: none;
-        font-size: 0.5rem;
+        font-size: 1.2rem;
 
         .copyright {
-            // float: left;
+            padding-bottom: 0rem;
             span {
                 padding-left: 3rem;
                 float: left;
@@ -612,10 +530,14 @@ div.main-buttons {
             float: right;
             a {
                 padding: 0;
-                padding-right: 1rem;
+                padding-right: 2rem;
                 margin: 0;
                 color: #fff;
                 text-decoration: none;
+
+                &:hover {
+                    color: darken(#fff, 20%);
+                }
             }
         }
     }
