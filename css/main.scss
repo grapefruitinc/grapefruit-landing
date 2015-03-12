@@ -1,6 +1,8 @@
 ---
 ---
 
+/* variables for colors */
+
 $gf-red:  #CA4443;
 $dark-red: #B03B3B;
 $light-red: #FFDAD9;
@@ -9,13 +11,16 @@ $orchard-purple: #8d1767;
 $dark-green: #769271;
 $light-green: #E4FDCB;
 
+
+/*** intialization ***/
+
 /* prevent empty columns from colapsing */
 .column, .columns {
     min-height: 1px;
 }
-.container {
-    /* max-width: 800px; */
-}
+
+/*** common classes ***/
+
 .section {
     border-bottom: 12px solid $gf-red;
 }
@@ -31,7 +36,8 @@ a:hover, .button:hover {
  color: #222;
 }
 
-/* Navbar */
+/*** Navbar ***/
+
 .navbar {
     border-top-width: 0;
 }
@@ -90,7 +96,7 @@ a:hover, .button:hover {
 }
 #menu-mobile ul {
     list-style-type: none;
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 900;
     padding: 4rem;
 }
@@ -184,6 +190,9 @@ div.main-buttons {
         text-align: center;
     }
 
+    .text-small {
+        font-size: 1.7rem;
+    }
     #open-source-notice {
         padding: 7rem 0rem;
         .text-small {

@@ -44,6 +44,7 @@
             <div class="row">
                 <a href="#landing-area"><img id="logo" class="logo" src="images/grapefruit.png"></img></a>
                 <ul class="navbar-list u-pull-right">
+                    <!-- navbar links only show on large desktop screen sizes -->
                     <li class="navbar-item">
                       <a class="navbar-link" href="#why-grapefruit">Why Grapefruit?</a>
                     </li>
@@ -56,6 +57,7 @@
                     <li class="navbar-item">
                       <a class="navbar-link" href="http://blog.grapefruit.link" target="_blank">Blog &rarr;</a>
                     </li>
+                    <!-- menu button visible only on small mobile screen sizes -->
                     <li class="navbar-item menu-button">
                     <a class="" href="#">
                         <img id="menu-button-image" src="images/menu-black.png"></img>
@@ -64,8 +66,9 @@
                 </ul>
             </div>
         </nav>
-        <!-- mobile nav overlay -->
+        <!-- mobile nav overlay, toggled via navbar menu-button-->
         <div id="menu-mobile" class="">
+            <!-- overlay a new logo and menu-button since navbar is covered -->
             <div class="row">
                 <a class="u-pull-left" href="#">
                     <a href="" name="top"></a>
@@ -79,16 +82,16 @@
             </div>
             <ul class="row">
                 <li class="">
+                    <a class="mobilenav-link" href="#why-grapefruit">Why Grapefruit?</a>
+                    </li>
+                    <li class="">
                     <a class="mobilenav-link" href="#features">Features</a>
                     </li>
                     <li class="">
-                    <a class="mobilenav-link" href="#case-studies">Case Studies</a>
+                    <a class="mobilenav-link" href="#grapefruit-orchard">Orchard</a>
                     </li>
                     <li class="">
-                    <a class="mobilenav-link" href="#blog">Blog</a>
-                    </li>
-                    <li class="">
-                    <a class="mobilenav-link" href="#orchard">Orchard</a>
+                    <a class="mobilenav-link" href="http://blog.grapefruit.link" target="_blank">Blog &rarr;</a>
                 </li>
             </ul>
         </div>
@@ -107,7 +110,7 @@
                 </div>
                 <!-- buttons -->
                 <div class="main-buttons">
-                        <a href="#why-grapefruit">Why Grapefruit? &cudarrr;</a>
+                        <a href="#why-grapefruit">Why Grapefruit? <span class="text-small">&cudarrr;</span></a>
                         <a href="http://cloud.grapefruit.link" class="orchard">Orchard Login &rsaquo;</a>
                 </div>
                 <!-- two sentences explaining freedom -->

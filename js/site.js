@@ -74,4 +74,10 @@ $(document).ready(function() {
 
     });
 
+    $('.mobilenav-link').on('click',function(e) {
+
+        $('#menu-mobile').toggleClass('open');
+
+    });
+
 });
