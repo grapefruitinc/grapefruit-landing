@@ -32,11 +32,17 @@ body {
 .align-text-center {
     text-align: center;
 }
+h1 {
+    font-weight: bold;
+}
 p {
     color: $paragraph;
 }
 .bold {
     font-weight: bold;
+}
+.text-weight-light {
+    font-weight: 200;
 }
 .extra-big {
     font-size: 5rem;
@@ -58,8 +64,8 @@ p {
     width: 15rem;
 }
 a, .button {
- color: #555;
- text-decoration: none;
+    color: #555;
+    text-decoration: none;
 }
 a:hover, .button:hover {
  color: #222;
@@ -79,16 +85,15 @@ a:hover, .button:hover {
 
     h6 {
         text-transform: uppercase;
-        font-weight: 900;
-        font-size: 2.1rem;
+        font-weight: 200;
+        font-size: 2.8rem;
         margin-bottom: 0.2rem;
         padding-bottom: 0;
-        font-weight: 900;
     }
     p {
 
-        font-size: 1.5rem;
-        font-weight: 600;
+        font-size: 1.8rem;
+        font-weight: 900;
     }
 }
 
@@ -299,7 +304,7 @@ a:hover, .button:hover {
         padding: 5rem;
 
         .title {
-            font-weight: bold;
+            font-weight: 200;
             text-transform: uppercase;
             font-size: 3rem;
             color: #D0021B;
@@ -353,7 +358,7 @@ a:hover, .button:hover {
     .orchard-talk {
         padding-top: 10rem;
 
-        h2 {
+        h1 {
             margin: 0;
         }
         p {
