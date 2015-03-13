@@ -9,7 +9,7 @@ $light-red: #FFDAD9;
 $orchard-purple: #8d1767;
 $dark-green: #769271;
 $light-green: #E4FDCB;
-$paragraph: #777a7a;
+$paragraph: darken(#777a7a, 20%);
 
 $navbar-height: 7.5rem;
 
@@ -25,6 +25,9 @@ $navbar-height: 7.5rem;
 html, body {
     height: 100%;
 }
+body {
+    font-size: 1.8em;
+}
 
 .align-text-center {
     text-align: center;
@@ -34,6 +37,9 @@ p {
 }
 .bold {
     font-weight: bold;
+}
+.extra-big {
+    font-size: 5rem;
 }
 .upper {
     text-transform: uppercase;
@@ -74,14 +80,15 @@ a:hover, .button:hover {
     h6 {
         text-transform: uppercase;
         font-weight: 900;
-        font-size: 1.3rem;
+        font-size: 2.1rem;
         margin-bottom: 0.2rem;
         padding-bottom: 0;
+        font-weight: 900;
     }
     p {
 
-        font-size: 1.3rem;
-        font-weight: 200;
+        font-size: 1.5rem;
+        font-weight: 600;
     }
 }
 
@@ -250,7 +257,7 @@ a:hover, .button:hover {
     .large-logo {
         margin: auto;
         display: block;
-        width: 20rem;
+        width: 15rem;
     }
 
     #open-source-notice {
@@ -262,23 +269,23 @@ a:hover, .button:hover {
     padding: 14rem 0rem;
 
     .title-block {
-        padding: 12rem 0rem 1rem 0rem;
+        padding: 15rem 0rem 1rem 0rem;
         .icon {
             display: block;
             margin: 0 auto;
-            width: 8rem;
+            width: 15rem;
             padding-bottom: 2rem;
         }
     }
     .more-info-button {
         display: block;
-        margin: 0rem auto 0rem auto;
+        margin: 2rem auto 0rem auto;
         text-transform: uppercase;
         border: 3px solid $gf-red;
         border-radius: 21px;
-        font-size: 1rem;
+        font-size: 1.2rem;
         font-weight: bold;
-        height: 4rem;
+        height: 6rem;
         line-height: 19px;
         &:hover {
             border-color: darken($gf-red, 10%);
@@ -293,6 +300,8 @@ a:hover, .button:hover {
 
         .title {
             font-weight: bold;
+            text-transform: uppercase;
+            font-size: 3rem;
             color: #D0021B;
             padding: 0;
             margin-bottom: 1rem;
@@ -300,6 +309,10 @@ a:hover, .button:hover {
         .screenshot {
             width: 100%;
             margin-left: -1rem;
+        }
+        p {
+            font-size: 2.4rem;
+            font-weight: 600;
         }
     }
 
@@ -340,7 +353,7 @@ a:hover, .button:hover {
     .orchard-talk {
         padding-top: 10rem;
 
-        h4 {
+        h2 {
             margin: 0;
         }
         p {
@@ -416,11 +429,11 @@ a:hover, .button:hover {
 @media (min-width: 550px) {
     #landing-area {
 
-        padding-top: 8%;
+        padding-top: 14%;
 
         .large-logo {
 
-            width: 40rem;
+            width: 30rem;
         }
     }
     .item-block {
@@ -445,7 +458,9 @@ a:hover, .button:hover {
         display: none;
     }
 
-
+    .extra-big {
+        font-size: 10rem;
+    }
 
     #take-a-tour {
         padding: 7rem 0rem;
@@ -473,13 +488,8 @@ a:hover, .button:hover {
     }
     #grapefruit-orchard {
         padding: 7rem 0rem;
-        .image-header {
-            display: block;
-            margin: 0 auto;
-            text-align: center;
-            width: 10rem;
-            margin-top: 7rem;
-            margin-bottom: 3rem;
+        .orchard-logo {
+            width: 40rem;
         }
         .text-header {
             margin-left: -3rem;
