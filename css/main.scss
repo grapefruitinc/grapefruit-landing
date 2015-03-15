@@ -9,7 +9,9 @@ $light-red: #FFDAD9;
 $orchard-purple: #8d1767;
 $dark-green: #769271;
 $light-green: #E4FDCB;
-$paragraph: darken(#777a7a, 20%);
+$text: #43464c;
+$paragraph: #5c5c5c;
+$text-light: rgba(255,255,255,0.7);
 
 $navbar-height: 7.5rem;
 
@@ -27,6 +29,7 @@ html, body {
 }
 body {
     font-size: 1.8em;
+    color: $text;
 }
 
 .align-text-center {
@@ -77,23 +80,23 @@ a:hover, .button:hover {
     margin-right: 0rem;
     margin-bottom: 5rem;
     min-height: 5rem;
-    color: #222;
     background-repeat: no-repeat;
     background-size: 5rem;
     padding-left: 70px;
     width: 70%;
 
     h6 {
-        text-transform: uppercase;
-        font-weight: 200;
+        // text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 0.05rem;
         font-size: 2.8rem;
         margin-bottom: 0.2rem;
         padding-bottom: 0;
     }
     p {
 
-        font-size: 1.8rem;
-        font-weight: 900;
+        font-size: 1.4rem;
+        font-weight: 400;
     }
 }
 
@@ -305,7 +308,7 @@ a:hover, .button:hover {
 
         .title {
             font-weight: 200;
-            text-transform: uppercase;
+            // text-transform: uppercase;
             font-size: 3rem;
             color: #D0021B;
             padding: 0;
@@ -316,8 +319,8 @@ a:hover, .button:hover {
             margin-left: -1rem;
         }
         p {
-            font-size: 2.4rem;
-            font-weight: 600;
+            // font-size: 2.4rem;
+            // font-weight: 600;
         }
     }
 
