@@ -1,0 +1,57 @@
+#orchard {
+
+    .icon {
+        width: 50%;
+        padding-bottom: 3rem;
+    }
+    .underlined {
+        text-decoration: underline;
+    }
+    .orchard-purple {
+        color: $orchard-purple;
+    }
+    .orchard-pricing {
+        padding: 3rem;
+        .tagline {
+            margin: 0;
+        }
+        .jab {
+            font-size: 1.6rem;
+            color: $paragraph;
+        }
+    }
+    .button-pair {
+        text-align: center;
+        a {
+            border-color: $gf-background-red;
+            color: $gf-background-red;
+        }
+        .orchard {
+            background: $orchard-purple;
+            border-color: $orchard-purple;
+            color: #fff;
+        }
+    }
+
+}
+
+@media (min-width: 550px) {
+    #orchard {
+        .icon {
+            width: 20rem;
+        }
+    }
+}
+
+@media (min-width: 950px) {
+    #orchard {
+        .orchard-pricing {
+            .tagline {
+                font-weight: 600;
+            }
+            .jab {
+                font-weight: 400;
+            }
+        }
+    }
+}

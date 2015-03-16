@@ -1,0 +1,25 @@
+#why-grapefruit {
+    // padding: 4rem 0rem 0rem 4rem;
+    .macbook {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 550px) {
+    #why-grapefruit {
+        .macbook {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+}
+@media (min-width: 950px) {
+    #why-grapefruit {
+        .macbook {
+            width: 70%;
+        }
+    }
+}

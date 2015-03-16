@@ -1,0 +1,95 @@
+#landing-area {
+    background: $gf-background-red;
+    position: relative;
+    padding-top: 15%;
+
+    .full {
+        height: calc(100vh - 7.5rem);
+        height: -moz-calc(100vh - 7.5rem);
+        height: -webkit-calc(100vh - 7.5rem);
+        height: -o-calc(100vh - 7.5rem);
+        height: calc(100vh - 7.5rem);
+        min-height: 500px;
+    }
+    .main-content {
+        padding-bottom: 10rem;
+    }
+    .large-logo {
+        margin: auto;
+        opacity: 0.1;
+        position:absolute;
+        width: 30rem;
+        left: 0;
+        top: 5%;
+        padding-right: 0;
+    }
+
+    .information {
+        padding-top: 20%;
+        padding-bottom: 3rem;
+        margin-left: 2rem;
+        .tagline {
+            padding: 0;
+            margin: 0;
+            font-weight: 400;
+            font-size: 2.5rem;
+            color: $landing-light;
+        }
+        .button-pair {
+
+            text-align: left;
+            // padding: 0;
+            // margin: 0;
+        }
+    }
+    #open-source-notice {
+        position: absolute;
+        bottom: 2.5%;
+        width: 90%;
+        display: block;
+        text-align: center;
+        padding: 8rem 0rem 0rem 0rem;
+        font-size: 1rem;
+        p {
+            color: $landing-light;
+            margin-bottom: 1.2rem;
+        }
+    }
+
+}
+
+@media (min-width: 950px) {
+    #landing-area {
+        .full {
+            height: calc(100vh - 20rem);
+            height: -moz-calc(100vh - 20rem);
+            height: -webkit-calc(100vh - 20rem);
+            height: -o-calc(100vh - 20rem);
+            min-height: inherit;
+        }
+        .large-logo {
+            display: block;
+            width: 43rem;
+            bottom: 50%;
+            left: 7%;
+        }
+
+        .information {
+            position: absolute;
+            bottom: 29.8%;
+            right: 20%;
+            .tagline {
+                font-size: 3.5rem;
+            }
+            .button-pair {
+            }
+        }
+        #open-source-notice {
+            width: 100%;
+            p {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+    }
+}

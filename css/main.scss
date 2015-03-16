@@ -17,7 +17,6 @@ $text-light: rgba(255,255,255,0.7);
 
 $navbar-height: 7.5rem;
 
-
 /* prevent empty columns from colapsing */
 .column, .columns {
     min-height: 1px;
@@ -25,7 +24,6 @@ $navbar-height: 7.5rem;
 .container {
    max-width: 1260px;
 }
-
 html, body {
     height: 100%;
 }
@@ -33,7 +31,6 @@ body {
     font-size: 1.2em;
     color: $text;
 }
-
 .align-text-center {
     text-align: center;
 }
@@ -68,10 +65,6 @@ p {
     font-weight: bold;
     text-align: center;
 }
-
-.section {
-}
-
 .image-content {
     background-image: url("../images/content.png");
 }
@@ -103,6 +96,10 @@ p {
     background-image: url("../images/orchard/heart.png");
 }
 
+@import 'navbar';
 @import 'mobile';
 @import 'tablet';
 @import 'desktop';
+@import 'footer';
+@import 'home/home';
+@import 'blog/blog';

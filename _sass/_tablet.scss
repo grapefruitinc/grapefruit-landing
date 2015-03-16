@@ -3,68 +3,8 @@
     body {
         font-size: 1.8em;
     }
-
-    #landing-area {
-        background: $gf-background-red;
-        position: relative;
-        padding-top: 24%;
-
-        .full {
-            height: calc(100vh - 7.5rem);
-            height: -moz-calc(100vh - 7.5rem);
-            height: -webkit-calc(100vh - 7.5rem);
-            height: -o-calc(100vh - 7.5rem);
-            height: calc(100vh - 7.5rem);
-            min-height: 500px;
-        }
-        .main-content {
-            padding-bottom: 10rem;
-        }
-        .large-logo {
-            margin: auto;
-            opacity: 0.1;
-            position:absolute;
-            width: 30rem;
-            left: 0;
-            top: 5%;
-            padding-right: 0;
-        }
-
-        .information {
-            // padding: 10rem;
-            // padding-left: 0;
-            padding-top: 9rem;
-            padding-bottom: 3rem;
-            margin-left: 10%;
-            .tagline {
-                padding: 0;
-                margin: 0;
-                font-weight: 400;
-                font-size: 3rem;
-                color: $landing-light;
-            }
-            .button-pair {
-            }
-        }
-        #open-source-notice {
-            position: absolute;
-            bottom: 2.5%;
-            width: 90%;
-            display: block;
-            text-align: center;
-            padding: 8rem 0rem 0rem 0rem;
-            font-size: 1rem;
-            p {
-                color: $landing-light;
-                margin-bottom: 0.5rem;
-            }
-        }
-
-    }
     .title-block {
         padding: 9rem 0rem 1rem 0rem;
-        // display: block;
-        // margin: 0 auto;
         .icon {
             display: block;
             margin: 0 auto;
@@ -76,7 +16,6 @@
             margin-bottom: 1rem;
         }
         .blurb {
-            // width: 50%;
         }
         .learn-more {
             display: block;
@@ -99,9 +38,7 @@
         background-position: 9px 9px;
         padding-left: 80px;
         width: 70%;
-
         .title {
-            // text-transform: uppercase;
             font-weight: 400;
             letter-spacing: 0.05rem;
             font-size: 2.6rem;
@@ -109,22 +46,12 @@
             padding-bottom: 0;
         }
         .blurb {
-
             font-size: 1.4rem;
             font-weight: 400;
         }
     }
-    #why-grapefruit {
-        // padding: 4rem 0rem 0rem 4rem;
-        .macbook {
-            display: block;
-            margin: 0 auto;
-            width: 100%;
-        }
-    }
     .features {
         padding: 4rem 1rem;
-
         .list {
             padding-bottom: 1rem;
             width: 80%;
@@ -150,79 +77,5 @@
         .screenshot {
             width: 100%;
         }
-
     }
-    #orchard {
-
-        .icon {
-            width: 20rem;
-            padding-bottom: 3rem;
-        }
-        .underlined {
-            text-decoration: underline;
-        }
-        .orchard-purple {
-            color: $orchard-purple;
-        }
-        .orchard-pricing {
-            padding: 3rem;
-            .tagline {
-                margin: 0;
-            }
-            .jab {
-                font-size: 1.6rem;
-                color: $paragraph;
-            }
-        }
-        .button-pair {
-            text-align: center;
-            a {
-                border-color: $gf-background-red;
-                color: $gf-background-red;
-            }
-            .orchard {
-                background: $orchard-purple;
-                border-color: $orchard-purple;
-                color: #fff;
-            }
-        }
-
-    }
-    #sponsors {
-        .sponsor {
-            display: block;
-            margin: 0 auto;
-            width: 60%;
-            padding: 5rem 0rem;
-        }
-    }
-
-    #footer {
-        padding: 3rem;
-        background: $gf-background-red;
-        text-decoration: none;
-        font-size: 1.4rem;
-        font-weight: 200;
-
-        .copyright {
-
-            text-align: center;
-            padding-bottom: 2rem;
-            span {
-                display: block;
-                clear: both;
-            }
-        }
-        .links {
-            text-align: center;
-            a {
-                padding: 0;
-                padding-right: 3rem;
-                margin: 0;
-                color: #fff;
-                text-decoration: none;
-            }
-        }
-    }
-
 }

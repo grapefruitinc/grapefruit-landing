@@ -9,7 +9,6 @@ a, .button {
 a:hover, .button:hover {
  color: #222;
 }
-
 .item-block {
     margin-top: 3rem;
     margin-left: 5%;
@@ -21,9 +20,7 @@ a:hover, .button:hover {
     background-position: 9px 9px;
     padding-left: 70px;
     width: 70%;
-
     .title {
-        // text-transform: uppercase;
         font-weight: 400;
         letter-spacing: 0.05rem;
         font-size: 2.6rem;
@@ -31,133 +28,22 @@ a:hover, .button:hover {
         padding-bottom: 0;
     }
     .blurb {
-
         font-size: 1.4rem;
         font-weight: 400;
     }
 }
-
 .divider {
     width: 100%;
     display: block;
     border-bottom: 1px solid #979797;
 
 }
-
-/*** Navbar ***/
-
-.navbar {
-    border-top-width: 0;
-}
-.navbar,
-.navbar-spacer {
-    display: block;
-    position: fixed;
-    top:0;left:0;
-    width: 100%;
-    height: $navbar-height;
-    z-index: 99;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    background: none;
-    border: none;
-}
-.navbar-spacer {
-    display: none;
-}
-.navbar-border {
-    border-bottom: 1px solid #eee;
-}
-.navbar-list {
-    list-style: none;
-    margin-bottom: 0;
-
-}
-.navbar-item {
-    display: none;
-    position: relative;
-    float: left;
-    margin-bottom: 0;
-}
-.menu-button {
-    display: block;
-    padding: 1.7rem;
-}
-#menu-mobile {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background:rgba(255,255,255,0.98);
-}
-#menu-mobile ul {
-    margin: 0;
-}
-#menu-mobile.open {
-    display: block;
-}
-.menu-button img {
-    width: 4rem;
-}
-#menu-mobile ul {
-    list-style-type: none;
-    font-size: 4rem;
-    font-weight: 900;
-    padding: 4rem;
-}
-#menu-mobile a {
-    text-decoration: none;
-    color: #222;
-}
-#menu-mobile a:hover {
-    text-decoration: underline;
-    color: $dark-red;
-}
-.navbar-link {
-    text-transform: uppercase;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: .2rem;
-    margin-right: 35px;
-    text-decoration: none;
-    line-height: 7.5rem;
-    color: #fff;
-}
-
-.navbar-link.active {
-    color: #33C3F0;
-}
-.navbar-link:hover {
-    color: $dark-red;
-}
-.has-docked-nav .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-.has-docked-nav .navbar-spacer {
-    display: block;
-}
-.has-docked-nav .navbar-link {
-    color: #222;
-}
-.has-docked-nav .navbar-link:hover {
-    color: $dark-red;
-}
-
 /* styling for button pairs */
-
 .button-pair {
     display: block;
     clear: both;
     padding-top: 3rem;
     padding-bottom: 7rem;
-
     a {
         margin: 0.8rem 0.8rem 0.8rem 0rem;
         display: inline-block;
@@ -183,71 +69,9 @@ a:hover, .button:hover {
       border-color: rgba(141,23,103,0.3);
       color: $orchard-purple;
     }
-
 }
 .full-height {
     height: 100%;
-}
-#landing-area {
-    background: $gf-background-red;
-    position: relative;
-    padding-top: 15%;
-
-    .full {
-        height: calc(100vh - 7.5rem);
-        height: -moz-calc(100vh - 7.5rem);
-        height: -webkit-calc(100vh - 7.5rem);
-        height: -o-calc(100vh - 7.5rem);
-        height: calc(100vh - 7.5rem);
-        min-height: 500px;
-    }
-    .main-content {
-        padding-bottom: 10rem;
-    }
-    .large-logo {
-        margin: auto;
-        opacity: 0.1;
-        position:absolute;
-        width: 30rem;
-        left: 0;
-        top: 5%;
-        padding-right: 0;
-    }
-
-    .information {
-        // padding: 10rem;
-        // padding-left: 0;
-        padding-top: 20%;
-        padding-bottom: 3rem;
-        margin-left: 2rem;
-        .tagline {
-            padding: 0;
-            margin: 0;
-            font-weight: 400;
-            font-size: 2.5rem;
-            color: $landing-light;
-        }
-        .button-pair {
-
-            text-align: left;
-            // padding: 0;
-            // margin: 0;
-        }
-    }
-    #open-source-notice {
-        position: absolute;
-        bottom: 2.5%;
-        width: 90%;
-        display: block;
-        text-align: center;
-        padding: 8rem 0rem 0rem 0rem;
-        font-size: 1rem;
-        p {
-            color: $landing-light;
-            margin-bottom: 1.2rem;
-        }
-    }
-
 }
 .title-block {
     padding: 5rem 0rem 1rem 0rem;
@@ -276,21 +100,9 @@ a:hover, .button:hover {
         padding-bottom: 3rem;
     }
 }
-#why-grapefruit {
-    // padding: 4rem 0rem 0rem 4rem;
-    .macbook {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-    }
-}
 .features {
     padding: 4rem 1rem;
-    // padding: 0;
-    // margin: 0;
-
     .list {
-
         padding-bottom: 1rem;
         .feature {
             color: #CA4443;
@@ -307,77 +119,5 @@ a:hover, .button:hover {
     }
     .screenshot {
         width: 100%;
-    }
-
-}
-#orchard {
-
-    .icon {
-        width: 50%;
-        padding-bottom: 3rem;
-    }
-    .underlined {
-        text-decoration: underline;
-    }
-    .orchard-purple {
-      color: $orchard-purple;
-    }
-    .orchard-pricing {
-        padding: 3rem;
-        .tagline {
-            margin: 0;
-        }
-        .jab {
-            font-size: 1.6rem;
-            color: $paragraph;
-        }
-    }
-    .button-pair {
-        text-align: center;
-        a {
-            border-color: $gf-background-red;
-            color: $gf-background-red;
-        }
-        .orchard {
-            background: $orchard-purple;
-            border-color: $orchard-purple;
-            color: #fff;
-        }
-    }
-
-}
-#sponsors {
-    .sponsor {
-        width: 100%;
-        padding: 5rem 0rem;
-    }
-}
-
-#footer {
-    padding: 1rem;
-    background: $gf-background-red;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.3rem;
-
-    .copyright {
-
-        font-size: 1.2rem;
-        text-align: center;
-        padding-bottom: 2rem;
-        span {
-            display: block;
-            clear: both;
-        }
-    }
-    .links {
-        text-align: center;
-        a {
-            padding: 0;
-            padding-right: 1rem;
-            margin: 0;
-            color: #fff;
-            text-decoration: none;
-        }
     }
 }

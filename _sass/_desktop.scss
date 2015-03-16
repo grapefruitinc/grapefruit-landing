@@ -3,75 +3,6 @@
     body {
         font-size: 1.6em;
     }
-    .navbar-item {
-        display: block;
-    }
-    .menu-button {
-        display: none;
-    }
-    #landing-area {
-        background: $gf-background-red;
-        position: relative;
-        padding-top: 15%;
-        .full {
-            height: calc(100vh - 20rem);
-            height: -moz-calc(100vh - 20rem);
-            height: -webkit-calc(100vh - 20rem);
-            height: -o-calc(100vh - 20rem);
-            min-height: inherit;
-        }
-
-        .main-content {
-            // padding-bottom: 10rem;
-        }
-        .large-logo {
-            margin: auto;
-            position:absolute;
-            display: block;
-            width: 43rem;
-            padding-right: 0;
-            bottom: 50%;
-            left: 7%;
-        }
-
-        .information {
-            position: absolute;
-            // padding: 10rem;
-            // padding-left: 0;
-            // padding-top: 9rem;
-            // padding-bottom: 0;
-            bottom: 29.8%;
-            margin-left: 2rem;
-            right: 20%;
-            .tagline {
-                padding: 0;
-                margin: 0;
-                font-weight: 400;
-                font-size: 3.5rem;
-                color: $landing-light;
-            }
-            .button-pair {
-
-                // text-align: left;
-                // padding: 0;
-                // margin: 0;
-            }
-        }
-        #open-source-notice {
-            position: absolute;
-            bottom: 2.5%;
-            width: 100%;
-            display: block;
-            text-align: center;
-            padding: 8rem 0rem 0rem 0rem;
-            font-size: 1rem;
-            p {
-                color: $landing-light;
-                margin-bottom: 0.5rem;
-            }
-        }
-
-    }
     .title-block {
         padding: 9rem 0rem 1rem 0rem;
         // display: block;
@@ -165,18 +96,9 @@
         }
 
     }
-
     .item-block {
         margin-left: 15%;
         background-repeat: no-repeat;
-    }
-    #why-grapefruit {
-        // padding: 4rem 0rem 0rem 4rem;
-        .macbook {
-            display: block;
-            margin: 0 auto;
-            width: 70%;
-        }
     }
     .features {
         padding: 6rem 1rem;
@@ -211,83 +133,5 @@
             width: 60%;
         }
 
-    }
-    #orchard {
-
-        .icon {
-            width: 20rem;
-            padding-bottom: 3rem;
-        }
-        .underlined {
-            text-decoration: underline;
-        }
-        .orchard-purple {
-            color: $orchard-purple;
-        }
-        .orchard-pricing {
-            padding: 3rem;
-            .tagline {
-                margin: 0;
-                font-weight: 600;
-            }
-            .jab {
-                font-size: 1.6rem;
-                color: $paragraph;
-                font-weight: 400;
-            }
-        }
-        .button-pair {
-            text-align: center;
-            a {
-                border-color: $gf-background-red;
-                color: $gf-background-red;
-            }
-            .orchard {
-                background: $orchard-purple;
-                border-color: $orchard-purple;
-                color: #fff;
-            }
-        }
-
-    }
-    #sponsors {
-        .sponsor {
-            display: block;
-            float: left;
-            margin: 0 auto;
-            width: 20%;
-            padding: 9rem 5rem;
-        }
-    }
-    #footer {
-        padding: 1rem;
-        background: $gf-red;
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.2rem;
-
-        .copyright {
-            padding-bottom: 0rem;
-            span {
-                padding-left: 3rem;
-                float: left;
-                display: inline;
-                clear: inherit;
-            }
-        }
-        .links {
-            float: right;
-            a {
-                padding: 0;
-                padding-right: 2rem;
-                margin: 0;
-                color: #fff;
-                text-decoration: none;
-
-                &:hover {
-                    color: darken(#fff, 20%);
-                }
-            }
-        }
     }
 }
