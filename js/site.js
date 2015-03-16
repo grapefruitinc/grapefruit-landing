@@ -25,9 +25,13 @@ $(document).ready(function() {
 
         if(15 < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
             $body.addClass('has-docked-nav')
+            $('#logo').attr('src','images/grapefruit-logo.svg');
+            $('#menu-button-image').attr('src','images/menu-black.png');
         }
         if(15 > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
             $body.removeClass('has-docked-nav')
+            $('#logo').attr('src','images/grapefruit-logo-white.svg');
+            $('#menu-button-image').attr('src','images/menu-white.png');
         }
 
     }

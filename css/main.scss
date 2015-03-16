@@ -4,13 +4,15 @@
 /* variables */
 
 $gf-red:  #CA4443;
+$gf-background-red: #D65554;
 $dark-red: #B03B3B;
 $light-red: #FFDAD9;
 $orchard-purple: #8d1767;
 $dark-green: #769271;
 $light-green: #E4FDCB;
 $text: #43464c;
-$paragraph: #5c5c5c;
+$landing-light: #E6D9D9;
+$paragraph: #777A7A;
 $text-light: rgba(255,255,255,0.7);
 
 $navbar-height: 7.5rem;
@@ -28,7 +30,7 @@ html, body {
     height: 100%;
 }
 body {
-    font-size: 1.8em;
+    font-size: 1.2em;
     color: $text;
 }
 
@@ -50,8 +52,16 @@ p {
 .extra-big {
     font-size: 5rem;
 }
+.no-m-p {
+    margin: 0;
+    padding: 0;
+}
 .upper {
     text-transform: uppercase;
+}
+.panel {
+    background: rgba(245,246,248,0.57);
+    border: 1px solid #E2E6EB;
 }
 .text-header {
     font-size: 6rem;
@@ -60,316 +70,6 @@ p {
 }
 
 .section {
-    border-bottom: 12px solid $gf-red;
-}
-.logo {
-    padding: 1.7rem;
-    width: 15rem;
-}
-a, .button {
-    color: #555;
-    text-decoration: none;
-}
-a:hover, .button:hover {
- color: #222;
-}
-
-.item-block {
-    margin-top: 3rem;
-    margin-left: 5%;
-    margin-right: 0rem;
-    margin-bottom: 5rem;
-    min-height: 5rem;
-    background-repeat: no-repeat;
-    background-size: 5rem;
-    padding-left: 70px;
-    width: 70%;
-
-    h6 {
-        // text-transform: uppercase;
-        font-weight: 400;
-        letter-spacing: 0.05rem;
-        font-size: 2.8rem;
-        margin-bottom: 0.2rem;
-        padding-bottom: 0;
-    }
-    p {
-
-        font-size: 1.4rem;
-        font-weight: 400;
-    }
-}
-
-.divider {
-    width: 100%;
-    border-bottom: 1px solid $gf-red;
-    padding: 2rem 0rem 2rem 0rem;
-    display: block;
-
-    &.mini {
-        width: 30%;
-        margin: 0 auto;
-        padding: 9rem;
-    }
-    &.purple {
-        border-color: $orchard-purple;
-    }
-}
-
-/*** Navbar ***/
-
-.navbar {
-    border-top-width: 0;
-}
-.navbar,
-.navbar-spacer {
-    display: block;
-    position: fixed;
-    top:0;left:0;
-    width: 100%;
-    height: $navbar-height;
-    z-index: 99;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    background: none;
-    border: none;
-}
-.navbar-spacer {
-    display: none;
-}
-.navbar-border {
-    border-bottom: 1px solid #eee;
-}
-.navbar-list {
-    list-style: none;
-    margin-bottom: 0;
-
-}
-.navbar-item {
-    display: none;
-    position: relative;
-    float: left;
-    margin-bottom: 0;
-}
-.menu-button {
-    display: block;
-    padding: 1.7rem;
-}
-#menu-mobile {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    background:rgba(255,255,255,0.98);
-}
-#menu-mobile ul {
-    margin: 0;
-}
-#menu-mobile.open {
-    display: block;
-}
-.menu-button img {
-    width: 4rem;
-}
-#menu-mobile ul {
-    list-style-type: none;
-    font-size: 4rem;
-    font-weight: 900;
-    padding: 4rem;
-}
-#menu-mobile a {
-    text-decoration: none;
-    color: #222;
-}
-#menu-mobile a:hover {
-    text-decoration: underline;
-    color: $dark-red;
-}
-.navbar-link {
-    text-transform: uppercase;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: .2rem;
-    margin-right: 35px;
-    text-decoration: none;
-    line-height: 7.5rem;
-    color: #222;
-}
-
-.navbar-link.active {
-    color: #33C3F0;
-}
-.navbar-link:hover {
-    color: $dark-red;
-}
-.has-docked-nav .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-.has-docked-nav .navbar-spacer {
-    display: block;
-}
-.has-docked-nav .navbar-link {
-    color: #222;
-}
-.has-docked-nav .navbar-link:hover {
-    color: $dark-red;
-}
-
-/* styling for button pairs */
-
-.button-pair {
-    display: block;
-    clear: both;
-    text-align: center;
-    padding-bottom: 7rem;
-    a {
-        display: inline-block;
-        border-radius: .5em;
-        padding: .8em 1.2em;
-        font-size: 1em;
-        line-height: 1.7em;
-        background-color: $gf-red;
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: 900;
-        margin: 0.5rem;
-    }
-    a:hover {
-        background-color: darken($gf-red, 10%);
-    }
-    a.orchard{
-      background-color: $orchard-purple;
-      font-weight: 600;
-      color: #fff;
-    }
-    a.orchard:hover{
-      background-color: lighten($orchard-purple, 10%);
-      color: #fff;
-    }
-
-}
-.full-height {
-    height: 100%;
-}
-#landing-area {
-    position: relative;
-    padding-top: 34%;
-
-    .large-logo {
-        margin: auto;
-        display: block;
-        width: 15rem;
-    }
-
-    #open-source-notice {
-        padding: 2rem 0rem 2rem 0rem;
-    }
-
-}
-#why-grapefruit {
-    padding: 14rem 0rem;
-
-    .title-block {
-        padding: 15rem 0rem 1rem 0rem;
-        .icon {
-            display: block;
-            margin: 0 auto;
-            width: 15rem;
-            padding-bottom: 2rem;
-        }
-    }
-    .more-info-button {
-        display: block;
-        margin: 2rem auto 0rem auto;
-        text-transform: uppercase;
-        border: 3px solid $gf-red;
-        border-radius: 21px;
-        font-size: 1.2rem;
-        font-weight: bold;
-        height: 6rem;
-        line-height: 19px;
-        &:hover {
-            border-color: darken($gf-red, 10%);
-        }
-    }
-}
-#features {
-    padding: 14rem 0rem;
-
-    .example {
-        padding: 5rem;
-
-        .title {
-            font-weight: 200;
-            // text-transform: uppercase;
-            font-size: 3rem;
-            color: #D0021B;
-            padding: 0;
-            margin-bottom: 1rem;
-        }
-        .screenshot {
-            width: 100%;
-            margin-left: -1rem;
-        }
-        p {
-            // font-size: 2.4rem;
-            // font-weight: 600;
-        }
-    }
-
-}
-#grapefruit-orchard {
-    padding: 7rem 0rem;
-
-    .orchard-logo {
-            display: block;
-            margin: 0 auto;
-            text-align: center;
-            width: 20rem;
-            margin-top: 7rem;
-            margin-bottom: 3rem;
-    }
-    .underlined {
-        text-decoration: underline;
-    }
-    .light {
-        color: #C4C9C7;
-    }
-    .orchard-purple {
-      color: $orchard-purple;
-    }
-
-    .orchard-explaination {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        line-height: 3rem;
-
-        p {
-            line-height: 2.4rem;
-        }
-    }
-    .orchard-pricing {
-        padding-top: 10rem;
-    }
-    .orchard-talk {
-        padding-top: 10rem;
-
-        h1 {
-            margin: 0;
-        }
-        p {
-            padding: 0;
-            margin: 0;
-        }
-    }
-
 }
 
 .image-content {
@@ -403,160 +103,6 @@ a:hover, .button:hover {
     background-image: url("../images/orchard/heart.png");
 }
 
-#footer {
-    padding: 1rem;
-    background: $gf-red;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.3rem;
-
-    .copyright {
-
-        font-size: 1.2rem;
-        text-align: center;
-        padding-bottom: 2rem;
-        span {
-            display: block;
-            clear: both;
-        }
-    }
-    .links {
-        text-align: center;
-        a {
-            padding: 0;
-            padding-right: 1rem;
-            margin: 0;
-            color: #fff;
-            text-decoration: none;
-        }
-    }
-}
-
-
-/* Larger than phone */
-@media (min-width: 550px) {
-    #landing-area {
-
-        padding-top: 14%;
-
-        .large-logo {
-
-            width: 30rem;
-        }
-    }
-    .item-block {
-        margin-left: 15%;
-    }
-    #features {
-        .example {
-            .screenshot {
-                margin-left: -2rem;
-            }
-        }
-    }
-}
-
-/* Larger than tablet */
-@media (min-width: 950px) {
-
-    .navbar-item {
-        display: block;
-    }
-    .menu-button {
-        display: none;
-    }
-
-    .extra-big {
-        font-size: 10rem;
-    }
-
-    #take-a-tour {
-        padding: 7rem 0rem;
-
-        .example {
-            padding: 0;
-            margin-top: -15rem;
-            .title {
-                font-size: 2rem;
-                font-weight: bold;
-                color: #D0021B;
-                line-height: 29px;
-            }
-            .screenshot {
-
-                width: 100%;
-                margin-left: -1.5rem;
-            }
-            .text {
-
-                margin-top: -2rem;
-            }
-        }
-
-    }
-    #grapefruit-orchard {
-        padding: 7rem 0rem;
-        .orchard-logo {
-            width: 40rem;
-        }
-        .text-header {
-            margin-left: -3rem;
-        }
-        .text-gf {
-            color: $gf-red;
-            font-size: 5.5rem;
-        }
-        .vertical-divider {
-
-            font-weight: 100;
-            color: #ccc;
-        }
-        .text-o {
-            font-family: MinionPro-Regular;
-            color: $orchard-purple;
-            letter-spacing: 2.59px;
-            line-height: 86px;
-        }
-
-    }
-    .item-block {
-        margin-left: 15%;
-        background-repeat: no-repeat;
-    }
-    #features {
-        .screenshot {
-            margin-left: -2rem;
-        }
-    }
-    #footer {
-        padding: 1rem;
-        background: $gf-red;
-        color: #fff;
-        text-decoration: none;
-        font-size: 1.2rem;
-
-        .copyright {
-            padding-bottom: 0rem;
-            span {
-                padding-left: 3rem;
-                float: left;
-                display: inline;
-                clear: inherit;
-            }
-        }
-        .links {
-            float: right;
-            a {
-                padding: 0;
-                padding-right: 2rem;
-                margin: 0;
-                color: #fff;
-                text-decoration: none;
-
-                &:hover {
-                    color: darken(#fff, 20%);
-                }
-            }
-        }
-    }
-}
+@import 'mobile';
+@import 'tablet';
+@import 'desktop';
