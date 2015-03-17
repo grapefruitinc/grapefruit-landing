@@ -54,7 +54,11 @@ $(document).ready(function() {
         if(top > $('#why-grapefruit').offset().top - window.innerHeight/2) {
             if(top > $('#instructors').offset().top - window.innerHeight/2) {
                 if(top > $('#orchard').offset().top - window.innerHeight/2) {
-                    $('#navbar-orchard').addClass('navbar-current');
+                    if(top > $('#sponsors').offset().top - window.innerHeight/2) {
+
+                    } else {
+                        $('#navbar-orchard').addClass('navbar-current');
+                    }
                 } else {
                     $('#navbar-features').addClass('navbar-current');
                 }
