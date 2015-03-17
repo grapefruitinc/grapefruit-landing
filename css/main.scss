@@ -14,6 +14,7 @@ $text: #43464c;
 $landing-light: #E6D9D9;
 $paragraph: #777A7A;
 $text-light: rgba(255,255,255,0.7);
+$panel: rgba(245,246,248,0.57);
 
 $navbar-height: 7.5rem;
 
@@ -56,9 +57,12 @@ p {
 .upper {
     text-transform: uppercase;
 }
+.section {
+    background: #fff;
+}
 .panel {
-    background: rgba(245,246,248,0.57);
-    border: 1px solid #E2E6EB;
+    background: $panel;
+    border: 1px solid #eeeeee;
 }
 .text-header {
     font-size: 6rem;

@@ -3,6 +3,9 @@
     body {
         font-size: 1.8em;
     }
+    .divider {
+        width: 100%;
+    }
     .title-block {
         padding: 9rem 0rem 1rem 0rem;
         .icon {
@@ -51,7 +54,7 @@
         }
     }
     .features {
-        padding: 4rem 1rem;
+        padding: 4rem 1rem 0rem 1rem;
         .list {
             padding-bottom: 1rem;
             width: 80%;
@@ -76,6 +79,7 @@
         }
         .screenshot {
             width: 100%;
+            margin-bottom: -10rem;
         }
     }
 }

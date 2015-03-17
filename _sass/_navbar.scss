@@ -25,7 +25,11 @@
             -moz-transition: all 0.5s ease;
             -o-transition: all 0.5s ease;
             transition: all 0.5s ease;
-            padding-top: 0.2rem;
+            padding-top: 0.3rem;
+            opacity: 0.9;
+            &:hover {
+                opacity: 1;
+            }
         }
         .navbar-link {
             -webkit-transition: all 0.5s ease;
@@ -33,6 +37,10 @@
             -o-transition: all 0.5s ease;
             transition: all 0.5s ease;
             line-height: 4.6rem;
+            opacity: 0.9;
+            &:hover {
+                opacity: 1;
+            }
         }
 
         .menu-button {
@@ -41,6 +49,10 @@
             -o-transition: all 0.5s ease;
             transition: all 0.5s ease;
             padding-top: 0.3rem;
+            opacity: 0.9;
+            &:hover {
+                opacity: 1;
+            }
         }
 
     }
@@ -144,7 +156,11 @@
     display: block;
 }
 .has-docked-nav .navbar-link {
-    color: #222;
+    color: $text;
+    &.navbar-current {
+        color: $gf-background-red;
+        text-decoration: underline;
+    }
 }
 .has-docked-nav .navbar-link:hover {
     color: $dark-red;

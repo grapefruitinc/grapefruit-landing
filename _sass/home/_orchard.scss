@@ -11,7 +11,8 @@
         color: $orchard-purple;
     }
     .orchard-pricing {
-        padding: 3rem;
+        margin-top: 5rem;
+        padding: 4rem;
         .tagline {
             margin: 0;
         }
@@ -22,6 +23,7 @@
     }
     .button-pair {
         text-align: center;
+        padding-bottom: 8rem;
         a {
             border-color: $gf-background-red;
             color: $gf-background-red;
@@ -52,6 +54,9 @@
             .jab {
                 font-weight: 400;
             }
+        }
+        .button-pair {
+            padding-bottom: 8rem;
         }
     }
 }

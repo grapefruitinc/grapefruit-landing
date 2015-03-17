@@ -24,25 +24,46 @@ $(document).ready(function() {
     // nav managing function, fired on scroll
     function recalculateNavBar() {
 
-        console.log('scroll');
-        if(15 < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
+        var top = $window.scrollTop();
+        $('.navbar-link').removeClass('navbar-current');
+
+        if(15 < top && !$body.hasClass('has-docked-nav')) {
             $body.addClass('has-docked-nav');
             $('#logo').attr('src','images/grapefruit-logo.svg');
             $('#menu-button-image').attr('src','images/menu-black.png');
 
         }
-        if(window.innerHeight <  $window.scrollTop() && !$navbar.hasClass('shrink')) {
+        if(window.innerHeight <  top && !$navbar.hasClass('shrink')) {
             $navbar.addClass('shrink');
         }
-        if(window.innerHeight >  $window.scrollTop() && $navbar.hasClass('shrink')) {
+        if(window.innerHeight >  top && $navbar.hasClass('shrink')) {
             $navbar.removeClass('shrink');
         }
-        if(15 > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
+        if(15 > top && $body.hasClass('has-docked-nav')) {
             $body.removeClass('has-docked-nav')
             $navbar.removeClass('shrink')
             $('#logo').attr('src','images/grapefruit-logo-white.svg');
             $('#menu-button-image').attr('src','images/menu-white.png');
         }
+        if(top > $('#instructors').offset().top) {
+            $('#instructors-image').addClass('show');
+        }
+        if(top > $('#students').offset().top) {
+            $('#students-image').addClass('show');
+        }
+        if(top > $('#why-grapefruit').offset().top - window.innerHeight/2) {
+            if(top > $('#instructors').offset().top - window.innerHeight/2) {
+                if(top > $('#orchard').offset().top - window.innerHeight/2) {
+                    $('#navbar-orchard').addClass('navbar-current');
+                } else {
+                    $('#navbar-features').addClass('navbar-current');
+                }
+            } else {
+                $('#navbar-why').addClass('navbar-current');
+            }
+        }
+
+
 
     }
 

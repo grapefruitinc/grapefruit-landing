@@ -1,7 +1,9 @@
 #footer {
     padding: 1rem;
-    background: $gf-background-red;
-    color: #fff;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background: $panel;
+    // color: $gf-background-red;
     text-decoration: none;
     font-size: 1.3rem;
     .copyright {
@@ -18,7 +20,7 @@
             padding: 0;
             padding-right: 1rem;
             margin: 0;
-            color: #fff;
+            // color: #fff;
             text-decoration: none;
             &:hover {
                 color: darken(#fff, 20%);
@@ -29,7 +31,7 @@
 
 @media (min-width: 550px) {
     #footer {
-        padding: 3rem;
+        // padding: 3rem;
         font-size: 1.4rem;
         font-weight: 200;
         .links {
