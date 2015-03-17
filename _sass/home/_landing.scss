@@ -9,25 +9,27 @@
         height: -webkit-calc(100vh - 7.5rem);
         height: -o-calc(100vh - 7.5rem);
         height: calc(100vh - 7.5rem);
-        min-height: 500px;
+        // min-height: 100%;
     }
     .main-content {
         padding-bottom: 10rem;
     }
     .large-logo {
         margin: auto;
-        opacity: 0.1;
-        position:absolute;
-        width: 30rem;
+        opacity: 0.4;
+        // position:absolute;
+        display: none;
+        text-align: center;
+        width: 70%;
         left: 0;
         top: 5%;
         padding-right: 0;
+        padding-top: 6rem;
     }
 
     .information {
         padding-top: 20%;
-        padding-bottom: 3rem;
-        margin-left: 2rem;
+        display: block;
         .tagline {
             padding: 0;
             margin: 0;
@@ -38,8 +40,13 @@
         .button-pair {
 
             text-align: left;
-            // padding: 0;
-            // margin: 0;
+            padding: 0;
+            margin: 0;
+            a {
+                // width: 30%;
+                // text-align: center;
+                // font-size: 2em;
+            }
         }
     }
     #open-source-notice {
@@ -58,6 +65,19 @@
 
 }
 
+@media (min-width: 550px) {
+    #landing-area {
+        padding-top: 10%;
+        .large-logo {
+            // display: block;
+        }
+        .information {
+            .tagline {
+                font-size: 5rem;
+            }
+        }
+    }
+}
 @media (min-width: 950px) {
     #landing-area {
         .full {
@@ -69,19 +89,21 @@
         }
         .large-logo {
             display: block;
-            width: 48rem;
-            bottom: 50%;
-            left: 7%;
+            width: 90%;
+            // bottom: 50%;
+            // left: 7%;
+            vertical-align: baseline;
         }
 
         .information {
-            position: absolute;
-            bottom: 29.8%;
+            vertical-align: baseline;
+            // bottom: 29.8%;
             // right: -5%;
             .tagline {
                 font-size: 5.5rem;
             }
             .button-pair {
+                padding-top: 1rem;
                 font-size: 2.3rem;
             }
         }
