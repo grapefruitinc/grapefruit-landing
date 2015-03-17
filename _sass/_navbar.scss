@@ -15,9 +15,47 @@
     border-bottom: 1px solid #eee;
     background: none;
     border: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    &.shrink {
+        .logo {
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            padding-top: 0.2rem;
+        }
+        .navbar-link {
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            line-height: 4.6rem;
+        }
+
+        .menu-button {
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            padding-top: 0.3rem;
+        }
+
+    }
+
 }
 .navbar-spacer {
     display: none;
+}
+.logo {
+    padding: 1.7rem;
+    width: 15rem;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 .navbar-border {
     border-bottom: 1px solid #eee;
@@ -34,6 +72,10 @@
     margin-bottom: 0;
 }
 .menu-button {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     display: block;
     padding: 1.7rem;
 }
@@ -71,6 +113,10 @@
     color: $dark-red;
 }
 .navbar-link {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 600;
@@ -103,7 +149,13 @@
 .has-docked-nav .navbar-link:hover {
     color: $dark-red;
 }
-
+.shrink {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    height: 4.5rem;
+}
 @media (min-width: 950px) {
     .navbar-item {
         display: block;

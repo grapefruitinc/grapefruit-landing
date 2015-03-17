@@ -1,7 +1,6 @@
-/* Larger than tablet */
 @media (min-width: 950px) {
-    body {
-        font-size: 1.6em;
+    html, body {
+        font-size: 0.5em;
     }
     .title-block {
         padding: 9rem 0rem 1rem 0rem;
@@ -60,7 +59,7 @@
         }
         .blurb {
 
-            font-size: 1.4rem;
+            font-size: 1.8rem;
             font-weight: 400;
         }
     }
@@ -126,6 +125,7 @@
             width: 60%;
             display: block;
             margin: 0 auto;
+            font-size: 1.8rem;
         }
         .screenshot {
             display: block;

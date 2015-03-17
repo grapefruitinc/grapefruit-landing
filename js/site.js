@@ -4,6 +4,7 @@ $(document).ready(function() {
     var $nav            = $('.navbar'),
         $body           = $('body'),
         $window         = $(window),
+        $navbar         = $('#navbar'),
         navOffsetTop    = $nav.offset().top,
         $document       = $(document);
 
@@ -23,13 +24,22 @@ $(document).ready(function() {
     // nav managing function, fired on scroll
     function recalculateNavBar() {
 
+        console.log('scroll');
         if(15 < $window.scrollTop() && !$body.hasClass('has-docked-nav')) {
-            $body.addClass('has-docked-nav')
+            $body.addClass('has-docked-nav');
             $('#logo').attr('src','images/grapefruit-logo.svg');
             $('#menu-button-image').attr('src','images/menu-black.png');
+
+        }
+        if(window.innerHeight <  $window.scrollTop() && !$navbar.hasClass('shrink')) {
+            $navbar.addClass('shrink');
+        }
+        if(window.innerHeight >  $window.scrollTop() && $navbar.hasClass('shrink')) {
+            $navbar.removeClass('shrink');
         }
         if(15 > $window.scrollTop() && $body.hasClass('has-docked-nav')) {
             $body.removeClass('has-docked-nav')
+            $navbar.removeClass('shrink')
             $('#logo').attr('src','images/grapefruit-logo-white.svg');
             $('#menu-button-image').attr('src','images/menu-white.png');
         }
