@@ -28,10 +28,18 @@
             border-color: $gf-background-red;
             color: $gf-background-red;
         }
-        .orchard {
+        a:hover{
+          border-color: $gf-red;
+          color: #fff;
+        }
+        a.orchard {
             background: $orchard-purple;
             border-color: $orchard-purple;
             color: #fff;
+        }
+        a.orchard:hover{
+          border-color: lighten($orchard-purple, 10%);
+          background-color: lighten($orchard-purple, 10%);
         }
     }
 

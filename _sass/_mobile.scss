@@ -77,8 +77,7 @@
         border: 1px solid #fff;
     }
     a:hover {
-        color: darken($gf-red,20%);
-        border-color: darken($gf-red,20%);
+        background-color: $gf-red;
     }
     a.orchard{
       background-color: #fff;
@@ -86,8 +85,9 @@
       color: $gf-background-red;
     }
     a.orchard:hover{
-      border-color: rgba(141,23,103,0.3);
-      color: $orchard-purple;
+      border-color: $orchard-purple;
+      background-color: $orchard-purple;
+      color: #fff;
     }
 }
 .full-height {
