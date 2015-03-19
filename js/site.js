@@ -39,12 +39,6 @@ $(document).ready(function() {
         if(window.innerHeight*.9 >  top && $navbar.hasClass('shrink')) {
             $navbar.removeClass('shrink');
         }
-        if(15 > top && $body.hasClass('has-docked-nav')) {
-            $body.removeClass('has-docked-nav')
-            $navbar.removeClass('shrink')
-            $('#logo').attr('src','images/grapefruit-logo-white.svg');
-            $('#menu-button-image').attr('src','images/menu-white.png');
-        }
         if(top > $('#instructors').offset().top) {
             $('#instructors-image').addClass('show');
         }
