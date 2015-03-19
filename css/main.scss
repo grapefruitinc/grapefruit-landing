@@ -69,6 +69,15 @@ p {
     font-weight: bold;
     text-align: center;
 }
+
+a, .button {
+    color: #555;
+    text-decoration: none;
+}
+a:hover, .button:hover {
+ color: #222;
+}
+
 .image-content {
     background-image: url("../images/content.png");
 }

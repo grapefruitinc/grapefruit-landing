@@ -3,140 +3,63 @@
         font-size: 0.5em;
     }
     .title-block {
-        padding: 9rem 0rem 1rem 0rem;
-        // display: block;
-        // margin: 0 auto;
         .icon {
-            display: block;
-            margin: 0 auto;
-            width: 9rem;
             padding-bottom: 1.5rem;
         }
         .title {
-            font-weight: 500;
-            margin-bottom: 1rem;
             font-size: 3.0rem;
         }
         .blurb {
-            display: block;
-            margin: 0 auto;
             width: 50%;
             padding-bottom: 3rem;
             font-size: 1.8rem;
-        }
-        .learn-more {
-            display: block;
-            text-align: center;
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: #CA4443;
-            line-height: 16px;
-            padding-bottom: 3rem;
         }
     }
     .panel {
         padding: 2rem;
     }
     .item-block {
-        margin-top: 3rem;
         margin-left: 15%;
-        margin-right: 0rem;
-        margin-bottom: 5rem;
-        min-height: 5rem;
-        background-repeat: no-repeat;
         background-size: 4rem;
-        background-position: 9px 9px;
-        padding-left: 80px;
-        width: 70%;
-
-        .title {
-            // text-transform: uppercase;
-            font-weight: 400;
-            letter-spacing: 0.05rem;
-            font-size: 2.2rem;
-            margin-bottom: 0.4rem;
-            padding-bottom: 0;
-        }
         .blurb {
-
             font-size: 1.8rem;
-            font-weight: 400;
         }
     }
     .button-pair {
-        display: block;
-        clear: both;
-        text-align: center;
-        padding-bottom: 7rem;
         a {
-            display: inline-block;
-            border-radius: 4px;
-            padding: 1em 1.4em;
             font-size: 1.8rem;
-            color: #fff;
-            text-transform: uppercase;
-            font-weight: 900;
             margin: 0.5rem;
-            border: 1px solid #fff;
         }
-        a:hover {
-            background-color: darken($gf-red, 10%);
-        }
-        a.orchard{
-            background-color: #fff;
-            font-weight: 600;
-            color: $gf-background-red;
-        }
-        a.orchard:hover{
-            background-color: lighten($orchard-purple, 10%);
-            color: #fff;
-        }
-
     }
     .item-block {
         margin-left: 15%;
-        background-repeat: no-repeat;
     }
     .features {
-        padding: 4rem 1rem 0rem 1rem;
         .list {
-            padding-bottom: 1rem;
             width: 60%;
             text-align: center;
-            display: block;
-            margin: 0 auto;
             .feature {
-                color: #CA4443;
-                border: 2px solid #F18C8B;
-                border-radius: 4px;
-                padding: 0.5rem 1rem;
-                margin: 0.3rem;
-                margin-left: 0;
-                display: inline-block;
                 font-size: 1.8rem;
             }
         }
         .blurb {
-            margin: 0.3rem;
             padding-bottom: 0.5rem;
             width: 60%;
-            display: block;
-            margin: 0 auto;
             font-size: 1.8rem;
         }
         .screenshot {
             display: block;
             visibility: hidden;
             margin: 0 auto;
-            margin-bottom: -10rem;
-            width: 60%;
+            margin-bottom: -12rem;
+            width: 80%;
             &.show {
                 visibility: inherit;
-                -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-                -moz-animation: fadein 2s; /* Firefox < 16 */
-                -ms-animation: fadein 2s; /* Internet Explorer */
-                -o-animation: fadein 2s; /* Opera < 12.1 */
-                animation: fadein 2s;
+                -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+                -moz-animation: fadein 1s; /* Firefox < 16 */
+                -ms-animation: fadein 1s; /* Internet Explorer */
+                -o-animation: fadein 1s; /* Opera < 12.1 */
+                animation: fadein 1s;
             }
         }
 

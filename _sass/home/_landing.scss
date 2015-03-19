@@ -1,63 +1,72 @@
 #landing-area {
     background: $gf-background-red;
     position: relative;
-    padding-top: 15%;
-
-    .full {
-        height: calc(100vh - 7.5rem);
-        height: -moz-calc(100vh - 7.5rem);
-        height: -webkit-calc(100vh - 7.5rem);
-        height: -o-calc(100vh - 7.5rem);
-        height: calc(100vh - 7.5rem);
-        // min-height: 100%;
+    &.full {
+        min-height: 100vh;
+        position: relative;
     }
     .main-content {
         padding-bottom: 10rem;
     }
     .large-logo {
-        margin: auto;
-        opacity: 0.4;
-        // position:absolute;
-        display: none;
-        text-align: center;
-        width: 70%;
-        left: 0;
-        top: 5%;
-        padding-right: 0;
-        padding-top: 6rem;
-    }
-
-    .information {
-        padding-top: 20%;
+        opacity: 0.8;
+        overflow: hidden;
         display: block;
-        .tagline {
-            padding: 0;
-            margin: 0;
-            font-weight: 400;
-            font-size: 2.5rem;
-            color: $landing-light;
-        }
-        .button-pair {
-
-            text-align: left;
-            padding: 0;
-            margin: 0;
-            a {
-                // width: 30%;
-                // text-align: center;
-                // font-size: 2em;
+        position: absolute;
+        margin: 0 auto;
+        top: 70%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-10%);
+        -ms-transform: translate(-50%,-10%);
+        transform: translate(-50%,-10%);
+        width: 100%;
+    }
+    .information {
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            -webkit-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            padding-top:20%;
+            z-index: 5;
+            .tagline {
+                text-rendering: optimizelegibility;
+                -webkit-font-smoothing: antialiased;
+                font-size: 2.0rem;
+                font-weight: 400;
+                text-align: center;
+                color: #fff;
+                margin-bottom: 0rem;
+                padding: 0rem 5rem;
+            }
+            .button-pair {
+                float: none;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                padding-top: 1rem;
+                a {
+                    margin-top: 0.8rem;
+                    font-size: 1.0rem;
+                }
             }
         }
-    }
+
     #open-source-notice {
         position: absolute;
         bottom: 2.5%;
-        width: 90%;
-        display: block;
-        text-align: center;
+        width: 100%;
+        display: none;
+        margin: 0 auto;
         padding: 8rem 0rem 0rem 0rem;
-        font-size: 1rem;
+
+        font-size: 0.5rem;
         p {
+            text-align: center;
             color: $landing-light;
             margin-bottom: 1.2rem;
         }
@@ -67,44 +76,32 @@
 
 @media (min-width: 550px) {
     #landing-area {
-        padding-top: 10%;
-        .large-logo {
-            // display: block;
-        }
         .information {
+            padding-top:0%;
             .tagline {
-                font-size: 5rem;
+                font-size: 3.0rem;
+            }
+            .button-pair {
+                a {
+                    font-size: 1.5rem;
+                }
             }
         }
     }
 }
 @media (min-width: 950px) {
     #landing-area {
-        .full {
-            height: calc(100vh - 23rem);
-            height: -moz-calc(100vh - 20rem);
-            height: -webkit-calc(100vh - 20rem);
-            height: -o-calc(100vh - 20rem);
-            min-height: inherit;
-        }
         .large-logo {
-            display: block;
-            width: 90%;
-            // bottom: 50%;
-            // left: 7%;
-            vertical-align: baseline;
+            width: 80%;
         }
-
         .information {
-            vertical-align: baseline;
-            // bottom: 29.8%;
-            // right: -5%;
             .tagline {
                 font-size: 5.5rem;
             }
             .button-pair {
-                padding-top: 1rem;
-                font-size: 2.3rem;
+                a {
+                    font-size: 2rem;
+                }
             }
         }
         #open-source-notice {
