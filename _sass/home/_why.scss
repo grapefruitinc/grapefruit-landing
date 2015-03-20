@@ -1,5 +1,4 @@
 #why-grapefruit {
-    // padding: 4rem 0rem 0rem 4rem;
     position: relative;
     .macbook {
         display: block;
@@ -19,6 +18,7 @@
 }
 @media (min-width: 950px) {
     #why-grapefruit {
+      border-top: 4em solid lighten($gf-background, 20%);
         .macbook {
             width: 70%;
         }

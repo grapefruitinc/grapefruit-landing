@@ -1,9 +1,9 @@
 #landing-area {
-    background: $gf-background-red;
+    background: $gf-background;
     position: relative;
     &.full {
-        min-height: 100vh;
-        position: relative;
+      min-height: 100vh;
+      position: relative;
     }
     .main-content {
         padding-bottom: 10rem;
@@ -13,7 +13,7 @@
         display: block;
         position: absolute;
         margin: 0 auto;
-        top: 70%;
+        top: 55%;
         left: 50%;
         -webkit-transform: translate(-50%,-10%);
         -ms-transform: translate(-50%,-10%);
@@ -25,7 +25,7 @@
             margin: 0 auto;
             position: absolute;
             left: 50%;
-            top: 50%;
+            top: 35%;
             width: 100%;
             -webkit-transform: translate(-50%,-50%);
             -ms-transform: translate(-50%,-50%);
@@ -90,6 +90,7 @@
 }
 @media (min-width: 950px) {
     #landing-area {
+      border-bottom: 4em solid lighten($gf-background, 10%);
         .large-logo {
             width: 80%;
         }

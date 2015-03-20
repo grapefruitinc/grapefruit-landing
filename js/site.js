@@ -33,10 +33,10 @@ $(document).ready(function() {
             $('#menu-button-image').attr('src','images/menu-black.png');
 
         }
-        if(window.innerHeight*.9 <  top && !$navbar.hasClass('shrink')) {
+        if(window.innerHeight <  top && !$navbar.hasClass('shrink')) {
             $navbar.addClass('shrink');
         }
-        if(window.innerHeight*.9 >  top && $navbar.hasClass('shrink')) {
+        if(window.innerHeight >  top && $navbar.hasClass('shrink')) {
             $navbar.removeClass('shrink');
         }
         if(top > $('#instructors').offset().top) {
@@ -93,7 +93,6 @@ $(document).ready(function() {
     // recalculates offset and then recalculates nav bar
     function reRender() {
 
-        $body.removeClass('has-docked-nav');
         navOffsetTop = $nav.offset().top;
         recalculateNavBar();
 

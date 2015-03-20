@@ -53,6 +53,7 @@
     width: 100%;
     display: block;
     margin: 0 auto;
+    margin-top: 4rem;
     border-bottom: 1px solid #eeeeee;
 
 }
@@ -82,7 +83,7 @@
     a.orchard{
       background-color: #fff;
       font-weight: 600;
-      color: $gf-background-red;
+      color: darken($gf-background, 30%);
     }
     a.orchard:hover{
       border-color: $orchard-purple-light;
