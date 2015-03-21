@@ -2,13 +2,11 @@
 
   p.description{
     text-align: center;
-    max-width: 50%;
-    min-height: 3.5em;
+    margin-top: 1rem;
   }
 
   div.controls{
     text-align: center;
-    margin-top: 2rem;
     button[disabled]{
       color: #ccc;
       &:hover{
@@ -21,7 +19,7 @@
     div, span{
       display: none;
       img{
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         display: block;
       }
@@ -29,4 +27,18 @@
   }
 
 
+}
+
+
+@media (min-width: 550px) {
+  #slider{
+    p.description{
+      max-width: 50%;
+    }
+    div.shots {
+      img{
+        width: 80%;
+      }
+    }
+  }
 }
