@@ -33,17 +33,11 @@ $(document).ready(function() {
             $('#menu-button-image').attr('src','images/menu-black.png');
 
         }
-        if(window.innerHeight*.9 <  top && !$navbar.hasClass('shrink')) {
+        if(window.innerHeight <  top && !$navbar.hasClass('shrink')) {
             $navbar.addClass('shrink');
         }
-        if(window.innerHeight*.9 >  top && $navbar.hasClass('shrink')) {
+        if(window.innerHeight >  top && $navbar.hasClass('shrink')) {
             $navbar.removeClass('shrink');
-        }
-        if(15 > top && $body.hasClass('has-docked-nav')) {
-            $body.removeClass('has-docked-nav')
-            $navbar.removeClass('shrink')
-            $('#logo').attr('src','images/grapefruit-logo-white.svg');
-            $('#menu-button-image').attr('src','images/menu-white.png');
         }
         if(top > $('#instructors').offset().top) {
             $('#instructors-image').addClass('show');
@@ -54,11 +48,7 @@ $(document).ready(function() {
         if(top > $('#why-grapefruit').offset().top - window.innerHeight/2) {
             if(top > $('#instructors').offset().top - window.innerHeight/2) {
                 if(top > $('#orchard').offset().top - window.innerHeight/2) {
-                    if(top > $('#sponsors').offset().top - window.innerHeight/2) {
-
-                    } else {
                         $('#navbar-orchard').addClass('navbar-current');
-                    }
                 } else {
                     $('#navbar-features').addClass('navbar-current');
                 }
@@ -99,7 +89,6 @@ $(document).ready(function() {
     // recalculates offset and then recalculates nav bar
     function reRender() {
 
-        $body.removeClass('has-docked-nav');
         navOffsetTop = $nav.offset().top;
         recalculateNavBar();
 
@@ -118,5 +107,7 @@ $(document).ready(function() {
         $('#menu-mobile').toggleClass('open');
 
     });
+
+    gfs.init();
 
 });

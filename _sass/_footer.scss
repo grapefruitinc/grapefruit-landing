@@ -3,7 +3,6 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
     background: $panel;
-    // color: $gf-background-red;
     text-decoration: none;
     font-size: 1.3rem;
     .copyright {
@@ -23,7 +22,8 @@
             // color: #fff;
             text-decoration: none;
             &:hover {
-                color: darken(#fff, 20%);
+                color: #1e1e1e;
+                text-decoration: underline;
             }
         }
     }
@@ -43,7 +43,7 @@
 }
 @media (min-width: 950px) {
     #footer {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         .copyright {
             padding-bottom: 0rem;
             span {

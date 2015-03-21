@@ -1,0 +1,32 @@
+#slider{
+
+  p.description{
+    text-align: center;
+    max-width: 50%;
+    min-height: 3.5em;
+  }
+
+  div.controls{
+    text-align: center;
+    margin-top: 2rem;
+    button[disabled]{
+      color: #ccc;
+      &:hover{
+        border: 1px solid #bbb;
+      }
+    }
+  }
+
+  div.shots {
+    div, span{
+      display: none;
+      img{
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+
+
+}

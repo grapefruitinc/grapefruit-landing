@@ -53,6 +53,7 @@
     width: 100%;
     display: block;
     margin: 0 auto;
+    margin-top: 4rem;
     border-bottom: 1px solid #eeeeee;
 
 }
@@ -77,17 +78,17 @@
         border: 1px solid #fff;
     }
     a:hover {
-        color: darken($gf-red,20%);
-        border-color: darken($gf-red,20%);
+        background-color: $gf-red;
     }
     a.orchard{
       background-color: #fff;
       font-weight: 600;
-      color: $gf-background-red;
+      color: darken($gf-background, 30%);
     }
     a.orchard:hover{
-      border-color: rgba(141,23,103,0.3);
-      color: $orchard-purple;
+      border-color: $orchard-purple-light;
+      background-color: $orchard-purple-light;
+      color: #fff;
     }
 }
 .full-height {
@@ -95,7 +96,7 @@
 }
 
 .features {
-    padding: 4rem 1rem 0rem 1rem;
+    padding: 0rem 1rem 0rem 1rem;
     min-height: 400px;
     overflow: hidden;
     .list {

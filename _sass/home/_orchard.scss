@@ -25,13 +25,21 @@
         text-align: center;
         padding-bottom: 8rem;
         a {
-            border-color: $gf-background-red;
-            color: $gf-background-red;
+            border-color: $gf-background;
+            color: $gf-background;
         }
-        .orchard {
+        a:hover{
+          border-color: $gf-red;
+          color: #fff;
+        }
+        a.orchard {
             background: $orchard-purple;
             border-color: $orchard-purple;
             color: #fff;
+        }
+        a.orchard:hover{
+          border-color: $orchard-purple-light;
+          background-color: $orchard-purple-light;
         }
     }
 
@@ -56,7 +64,7 @@
             }
         }
         .button-pair {
-            padding-bottom: 8rem;
+            padding-bottom: 0rem;
         }
     }
 }

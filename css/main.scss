@@ -4,10 +4,11 @@
 /* variables */
 
 $gf-red:  #CA4443;
-$gf-background-red: #D65554;
+$gf-background: #bbb;
 $dark-red: #B03B3B;
 $light-red: #FFDAD9;
 $orchard-purple: #8d1767;
+$orchard-purple-light: lighten($orchard-purple, 10%);
 $dark-green: #769271;
 $light-green: #E4FDCB;
 $text: #43464c;
@@ -107,6 +108,9 @@ a:hover, .button:hover {
 }
 .image-heart {
     background-image: url("../images/orchard/heart.png");
+}
+.image-box {
+    background-image: url("../images/orchard/box.svg");
 }
 
 @import 'navbar';
