@@ -109,6 +109,9 @@ a:hover, .button:hover {
 .image-heart {
     background-image: url("../images/orchard/heart.png");
 }
+.image-box {
+    background-image: url("../images/orchard/box.svg");
+}
 
 @import 'navbar';
 @import 'mobile';
