@@ -1,5 +1,6 @@
 #why-grapefruit {
     position: relative;
+    border-top: 0.2em solid lighten($gf-background, 20%);
     .macbook {
         display: block;
         margin: 0 auto;
@@ -18,7 +19,7 @@
 }
 @media (min-width: 950px) {
     #why-grapefruit {
-      border-top: 4em solid lighten($gf-background, 20%);
+    border-top: 0.8em solid lighten($gf-background, 20%);
         .macbook {
             width: 70%;
         }

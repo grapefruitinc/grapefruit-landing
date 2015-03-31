@@ -1,5 +1,6 @@
 #landing-area {
-    background: $gf-background;
+    background: lighten($gf-red,15%);
+    background: white;
     position: relative;
     &.full {
       min-height: 100vh;
@@ -19,6 +20,7 @@
         -ms-transform: translate(-50%,-10%);
         transform: translate(-50%,-10%);
         width: 100%;
+        -webkit-mask-image: -webkit-gradient(linear, 50% 20%,50% 100%, from(rgba(0,0,0,1)), to(rgba(0,0,0,0.4)));
     }
     .information {
             display: block;
@@ -38,9 +40,8 @@
                 font-size: 2.0rem;
                 font-weight: 400;
                 text-align: center;
-                color: #fff;
                 margin-bottom: 0rem;
-                padding: 0rem 5rem;
+                padding: 3rem 5rem;
             }
             .button-pair {
                 float: none;
@@ -90,7 +91,6 @@
 }
 @media (min-width: 950px) {
     #landing-area {
-      border-bottom: 4em solid lighten($gf-background, 10%);
         .large-logo {
             width: 80%;
         }

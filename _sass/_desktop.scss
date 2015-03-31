@@ -20,7 +20,7 @@
     }
     .item-block {
         margin-left: 15%;
-        background-size: 4rem;
+        background-size: 5rem;
         .blurb {
             font-size: 1.8rem;
         }
@@ -33,36 +33,6 @@
     }
     .item-block {
         margin-left: 15%;
-    }
-    .features {
-        .list {
-            width: 60%;
-            text-align: center;
-            .feature {
-                font-size: 1.8rem;
-            }
-        }
-        .blurb {
-            padding-bottom: 0.5rem;
-            width: 60%;
-            font-size: 1.8rem;
-        }
-        .screenshot {
-            display: block;
-            visibility: hidden;
-            margin: 0 auto;
-            margin-bottom: -12rem;
-            width: 80%;
-            &.show {
-                visibility: inherit;
-                -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-                -moz-animation: fadein 1s; /* Firefox < 16 */
-                -ms-animation: fadein 1s; /* Internet Explorer */
-                -o-animation: fadein 1s; /* Opera < 12.1 */
-                animation: fadein 1s;
-            }
-        }
-
     }
 
 }

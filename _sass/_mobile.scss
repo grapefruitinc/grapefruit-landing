@@ -1,5 +1,8 @@
+html {
+    // font-size: 2em;
+}
 .title-block {
-    padding: 5rem 0rem 1rem 0rem;
+    padding: 5rem 0rem 3rem 0rem;
     // display: block;
     // margin: 0 auto;
     .icon {
@@ -9,12 +12,13 @@
         padding-bottom: 1rem;
     }
     .title {
-        font-weight: 500;
+        font-weight: 800;
         margin-bottom: 1rem;
     }
     .blurb {
         display: block;
         margin: 0 auto;
+        font-size: 1.4rem;
     }
     .learn-more {
         display: block;
@@ -30,22 +34,22 @@
     margin-top: 3rem;
     margin-left: 5%;
     margin-right: 0rem;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
     min-height: 5rem;
     background-repeat: no-repeat;
-    background-size: 5rem;
+    background-size: 4rem;
     background-position: 9px 9px;
     padding-left: 70px;
     width: 70%;
     .title {
-        font-weight: 400;
+        font-weight: 800;
         letter-spacing: 0.05rem;
-        font-size: 2.6rem;
+        font-size: 2.3rem;
         margin-bottom: 0.4rem;
         padding-bottom: 0;
     }
     .blurb {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: 400;
     }
 }
@@ -76,16 +80,16 @@
         text-transform: uppercase;
         font-weight: 900;
         border: 1px solid #fff;
-    }
-    a:hover {
         background-color: $gf-red;
     }
-    a.orchard{
-      background-color: #fff;
-      font-weight: 600;
-      color: darken($gf-background, 30%);
+    a:hover {
+        background-color: darken($gf-red,10%);
     }
     a.orchard:hover{
+      font-weight: 600;
+      background-color: darken($orchard-purple-light, 10%);
+    }
+    a.orchard{
       border-color: $orchard-purple-light;
       background-color: $orchard-purple-light;
       color: #fff;
@@ -95,67 +99,4 @@
     height: 100%;
 }
 
-.features {
-    padding: 0rem 1rem 0rem 1rem;
-    min-height: 400px;
-    overflow: hidden;
-    .list {
-        padding-bottom: 1rem;
-        .feature {
-            color: #CA4443;
-            border: 2px solid #F18C8B;
-            border-radius: 4px;
-            padding: 0.5rem 0.8rem;
-            margin: 0.3rem;
-            display: inline-block;
-        }
-    }
-    .blurb {
-        margin: 0.3rem;
-        padding-bottom: 0.5rem;
-    }
-    .screenshot {
-        width: 100%;
-        margin-bottom: -5rem;
-        // z-index: -3;
-        overflow: hidden;
-        &.show {
-            visibility: inherit;
-            -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-            -moz-animation: fadein 2s; /* Firefox < 16 */
-            -ms-animation: fadein 2s; /* Internet Explorer */
-            -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
-        }
-    }
 
-
-    @keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-    }
-
-    /* Firefox < 16 */
-    @-moz-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-    }
-
-    /* Safari, Chrome and Opera > 12.1 */
-    @-webkit-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-    }
-
-    /* Internet Explorer */
-    @-ms-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-    }
-
-    /* Opera < 12.1 */
-    @-o-keyframes fadein {
-        from { opacity: 0; }
-        to   { opacity: 1; }
-    }
-}

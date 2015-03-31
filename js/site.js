@@ -33,10 +33,10 @@ $(document).ready(function() {
             $('#menu-button-image').attr('src','images/menu-black.png');
 
         }
-        if(window.innerHeight <  top && !$navbar.hasClass('shrink')) {
+        if(window.innerHeight/5 <  top && !$navbar.hasClass('shrink')) {
             $navbar.addClass('shrink');
         }
-        if(window.innerHeight >  top && $navbar.hasClass('shrink')) {
+        if(window.innerHeight/5 >  top && $navbar.hasClass('shrink')) {
             $navbar.removeClass('shrink');
         }
         if(top > $('#instructors').offset().top) {
@@ -108,6 +108,14 @@ $(document).ready(function() {
 
     });
 
-    gfs.init();
+
+    $('.feature-button').on('click', function () {
+        $('.feature-button').removeClass('selected');
+        $('.feature').removeClass('selected');
+        $(this).addClass('selected');
+        $("."+$(this).data('shot')).addClass('selected');
+    });
+
+    // gfs.init();
 
 });
