@@ -6,7 +6,8 @@ $(document).ready(function() {
         $window         = $(window),
         $navbar         = $('#navbar'),
         navOffsetTop    = $nav.offset().top,
-        $document       = $(document);
+        $document       = $(document),
+        pathname        = window.location.pathname;
 
     // get everything setup on page load
     init();
@@ -29,8 +30,24 @@ $(document).ready(function() {
 
         if(15 < top && !$body.hasClass('has-docked-nav')) {
             $body.addClass('has-docked-nav');
-            $('#logo').attr('src','images/grapefruit-logo.svg');
+            if(pathname == '/jobs.html') {
+              $('#logo').attr('src','images/jobs-dark.png');
+              $('#logo').addClass('logo-jobs');
+            } else {
+              $('#logo').attr('src','images/grapefruit-logo.svg');
+            }
             $('#menu-button-image').attr('src','images/menu-black.png');
+
+        }
+        if(15 > top && $body.hasClass('has-docked-nav')) {
+            $body.removeClass('has-docked-nav');
+            if(pathname == '/jobs.html') {
+              $('#logo').attr('src','images/grapefruit-logo-white.svg');
+              $('#logo').removeClass('logo-jobs');
+            } else {
+              $('#logo').attr('src','images/grapefruit-logo.svg');
+            }
+            $('#menu-button-image').attr('src','images/menu-white.png');
 
         }
         if(window.innerHeight/5 <  top && !$navbar.hasClass('shrink')) {

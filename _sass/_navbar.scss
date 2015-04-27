@@ -27,6 +27,9 @@
             transition: all 0.5s ease;
             padding-top: 0.3rem;
             opacity: 0.9;
+            &.logo-jobs {
+              padding-top: 0.4rem;
+            }
             &:hover {
                 opacity: 1;
             }
@@ -68,6 +71,9 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    &.logo-jobs {
+      padding-top: 1.9rem;
+    }
 }
 .navbar-border {
     border-bottom: 1px solid #eee;
@@ -152,7 +158,7 @@
     background: #fff;
 }
 .has-docked-nav {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    // box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 .has-docked-nav .navbar-spacer {
     display: block;

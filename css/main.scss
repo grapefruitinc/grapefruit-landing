@@ -28,6 +28,7 @@ $navbar-height: 7.5rem;
 }
 html, body {
     height: 100%;
+    font-family: "Effra";
 }
 body {
     font-size: 1.2em;
@@ -119,4 +120,4 @@ a:hover, .button:hover {
 @import 'desktop';
 @import 'footer';
 @import 'home/home';
-@import 'blog/blog';
+@import 'jobs/jobs';
