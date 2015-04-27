@@ -1,13 +1,20 @@
 .logo-jobs {
   padding-left: 2.2rem;
-  height: 3.5rem;
+  height: 2.5rem;
   width: inherit;
+}
+@media (min-width: 550px) {
+  .logo-jobs {
+    padding-left: 2.2rem;
+    height: 3.5rem;
+    width: inherit;
+  }
 }
 .navbar-jobs .navbar-link {
   color: #fff;
 }
 .has-docked-nav .navbar-jobs .navbar-link {
-    color: #222;
+  color: #222;
 }
 #jobs-landing {
   background: $gf-red;

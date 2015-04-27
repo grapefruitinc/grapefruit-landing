@@ -28,7 +28,11 @@
       padding-top: 0.3rem;
       opacity: 0.9;
       &.logo-jobs {
-        padding-top: 0.4rem;
+
+        padding-top: 1rem;
+        @media (min-width: 550px) {
+          padding-top: 0.4rem;
+        }
       }
       &:hover {
         opacity: 1;
@@ -72,7 +76,10 @@
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   &.logo-jobs {
-    padding-top: 1.9rem;
+    padding-top: 2.5rem;
+    @media (min-width: 550px) {
+      padding-top: 1.9rem;
+    }
   }
 }
 .navbar-border {
