@@ -32,6 +32,13 @@
     .blurb {
       text-align: center;
       color: #eee;
+      a {
+        color: #eee;
+        text-decoration: underline;
+        &:hover {
+          color: white;
+        }
+      }
     }
   }
 
