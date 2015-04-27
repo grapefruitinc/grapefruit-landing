@@ -21,17 +21,16 @@
   transition: all 0.5s ease;
   &.shrink {
     .logo {
-      -webkit-transition: all 0.5s ease;
-      -moz-transition: all 0.5s ease;
-      -o-transition: all 0.5s ease;
-      transition: all 0.5s ease;
-      padding-top: 0.3rem;
-      opacity: 0.9;
-      &.logo-jobs {
-
-        padding-top: 1rem;
-        @media (min-width: 550px) {
-          padding-top: 0.4rem;
+      height: 3.0rem;
+      &.logo-padding {
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        padding-top: 0.3rem;
+        opacity: 0.9;
+        &.logo-jobs {
+          padding-top: 0.8rem;
         }
       }
       &:hover {
@@ -69,16 +68,18 @@
   display: none;
 }
 .logo {
-  padding: 1.7rem;
-  width: 15rem;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  &.logo-jobs {
-    padding-top: 2.5rem;
-    @media (min-width: 550px) {
-      padding-top: 1.9rem;
+  height: 3.0rem;
+  &.logo-padding {
+    padding: 1.7rem;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    &.logo-jobs {
+      padding-top: 2.5rem;
+      @media (min-width: 550px) {
+        padding-top: 1.9rem;
+      }
     }
   }
 }
