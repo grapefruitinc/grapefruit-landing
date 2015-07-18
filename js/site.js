@@ -7,7 +7,8 @@ $(document).ready(function() {
         $navbar         = $('#navbar'),
         navOffsetTop    = $nav.offset().top,
         $document       = $(document),
-        pathname        = window.location.pathname;
+        pathname        = window.location.pathname,
+        $root           = $('html, body');
 
     // get everything setup on page load
     init();
@@ -18,7 +19,7 @@ $(document).ready(function() {
 
         $window.on('scroll', recalculateNavBar);
         $window.on('resize', reRender);
-        $('a[href^="#"]').on('click', smoothScroll);
+        $('a').on('click', smoothScroll);
 
     }
 
@@ -28,81 +29,33 @@ $(document).ready(function() {
         var top = $window.scrollTop();
         $('.navbar-link').removeClass('navbar-current');
 
-        if(15 < top && !$body.hasClass('has-docked-nav')) {
-            $body.addClass('has-docked-nav');
-            if(pathname == '/jobs.html') {
-              $('#logo').attr('src','images/jobs-dark.png');
-              $('#logo').addClass('logo-jobs');
-            } else {
-              $('#logo').attr('src','images/grapefruit-logo.svg');
-            }
-            $('#menu-button-image').attr('src','images/menu-black.png');
-
+        if(15 < top && !$navbar.hasClass('docked')) {
+            $navbar.addClass('docked');
         }
-        if(15 > top && $body.hasClass('has-docked-nav')) {
-            $body.removeClass('has-docked-nav');
-            if(pathname == '/jobs.html') {
-              $('#logo').attr('src','images/grapefruit-logo-white.svg');
-              $('#logo').removeClass('logo-jobs');
-            } else {
-              $('#logo').attr('src','images/grapefruit-logo.svg');
-            }
-            $('#menu-button-image').attr('src','images/menu-white.png');
-
+        if(15 > top && $navbar.hasClass('docked')) {
+            $navbar.removeClass('docked');
         }
-        if(window.innerHeight/5 <  top && !$navbar.hasClass('shrink')) {
-            $navbar.addClass('shrink');
+        if(window.innerHeight/5 <  top && !$navbar.hasClass('shrunk')) {
+            $navbar.addClass('shrunk');
         }
-        if(window.innerHeight/5 >  top && $navbar.hasClass('shrink')) {
-            $navbar.removeClass('shrink');
+        if(window.innerHeight/5 >  top && $navbar.hasClass('shrunk')) {
+            $navbar.removeClass('shrunk');
         }
-        if(top > $('#instructors').offset().top) {
-            $('#instructors-image').addClass('show');
-        }
-        if(top > $('#students').offset().top) {
-            $('#students-image').addClass('show');
-        }
-        if(top > $('#why-grapefruit').offset().top - window.innerHeight/2) {
-            if(top > $('#instructors').offset().top - window.innerHeight/2) {
-                if(top > $('#orchard').offset().top - window.innerHeight/2) {
-                        $('#navbar-orchard').addClass('navbar-current');
-                } else {
-                    $('#navbar-features').addClass('navbar-current');
-                }
-            } else {
-                $('#navbar-why').addClass('navbar-current');
-            }
-        }
-
-
 
     }
 
     // smooth scroll animation for navigating to anchors
     function smoothScroll(e) {
-        console.log('smoothscrool');
-        e.preventDefault();
-        $(document).off("scroll");
-        var target = this.hash;
-        menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top-40
-        }, 0, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", recalculateNavBar);
+        var href = $.attr(this, 'href');
+        $root.animate({
+          scrollTop: $(href).offset().top
+        }, 500, function () {
+          window.location.hash = href;
         });
+        return false;
 
     }
-
-    $("#button").click(function() {
-
-        $('html, body').animate({
-            scrollTop: $("#elementtoScrollToID").offset().top
-        }, 2000);
-
-    });
-
+    
     // recalculates offset and then recalculates nav bar
     function reRender() {
 
@@ -116,22 +69,17 @@ $(document).ready(function() {
     $('.menu-button').on('click',function(e) {
 
         $('#menu-mobile').toggleClass('open');
+        $('body').toggleClass('disable-scroll');
 
     });
 
     $('.mobilenav-link').on('click',function(e) {
 
         $('#menu-mobile').toggleClass('open');
+        $('body').toggleClass('disable-scroll');
 
     });
 
-
-    $('.feature-button').on('click', function () {
-        $('.feature-button').removeClass('selected');
-        $('.feature').removeClass('selected');
-        $(this).addClass('selected');
-        $("."+$(this).data('shot')).addClass('selected');
-    });
 
     // gfs.init();
 

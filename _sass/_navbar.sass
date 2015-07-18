@@ -1,0 +1,77 @@
+.navbar-spacer
+  height: 10rem
+.navbar
+  z-index: 999
+  width: 100%
+  padding: 1.6rem 0rem 0.9rem 0rem
+  transition: padding 0.5s
+  position: fixed
+  top: 0
+  left: 0
+  background: #fff
+.logo
+  height: 3rem
+  vertical-align: center
+.navbar-list
+  display: inline
+  list-style: none
+  .navbar-item
+    padding: 0.6rem 1.6rem
+    margin: 0
+    float: right 
+    .navbar-link
+      font-weight: 800
+      display: inline
+      color: $text
+      opacity: 0.8
+      font-size: 1.2rem
+      text-transform: capitalize 
+      text-decoration: none
+      &:hover
+        color: darken($gf-red,5%)
+    @media (max-width: 900px)
+      display: none
+
+.docked
+  border-bottom: 1px solid #eee
+  box-shadow: 0 1px 1px rgba(0,0,0,.1)
+
+.shrunk
+  padding: 0.6rem 0rem 0.3rem 0rem
+  transition: padding 0.5s
+
+.menu-button
+  display: none
+  padding-left: 0 !important
+  padding-right: 0 !important
+  padding-bottom: 0 !important
+  padding-top: 0.3rem !important
+  a
+    display: inline
+    padding: 0
+    .menu-button-image
+      vertical-align: top
+      padding: 0
+      position: relative
+      width: 2.5rem
+  @media (max-width: 900px)
+    display: block !important
+
+#menu-mobile
+  display: none
+  position: fixed
+  background: #fff
+  z-index: 999
+  width: 100%
+  height: 80%
+  padding-top: 5rem
+  padding-bottom: 5rem
+  overflow-y: scroll
+  &.open
+    display: block 
+  ul
+    list-style: none
+    .mobilenav-link
+      font-size: 4rem
+
+
